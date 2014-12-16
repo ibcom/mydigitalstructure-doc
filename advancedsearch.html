@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_id' Content='33986'>
+<title>Advanced Search - mydigitalstructure</title>
+<meta name='description' content=''>
+<meta name='keywords' content=''>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 33986;
+var mydigitalstructureDocumentId = 33986;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=33986&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table class="onDemandMethodReferenceHeader" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceHeaderColumn1" valign="top">&nbsp;</td>
+<td>
+<p><span style="font-size: 24pt;"><strong><span style="font-size: 24pt;">ADVANCED SEARCH</span></strong> </span><br /><br />Advanced searches provide a way of describing a request for specific data from the endpoints managing the object data.</p>
+<p>You can do a direct JSON <span style="color: #888888;">(or XML)</span> formatted request or if building using Javascript, you use the open source 1blankspace script&nbsp;<span style="color: #000000;"><a href="https://github.com/ibcom/1blankspace/blob/master/1blankspace.advancedsearch-2.0.3.js" target="_blank">/jscripts/1blankspace.advancedsearch-2.0.3.js</a>&nbsp;- which includes a AdvancedSearch namespace</span>&nbsp;(object) for building and sending a search request. &nbsp;Notes below are in reference to this namespace (object).<br /><br /><a href="advancedsearch_structures.html">Using advanced search with custom object structures (eg extra attributes)</a><br /><br /><a href="advancedSearch_direct.html">JSON format for direct POST</a>&nbsp;<span style="color: #999999;">(or GET)</span></p>
+</td>
+<td style="width: 15px;">&nbsp;</td>
+<td class="onDemandEndPointHeaderEndPoint"><img title="AS" src="site/1210/mydigitalstructure_AS_badge_100.png" alt="AS" width="100" height="77" /></td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceParameters" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceParametersHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn2">PARAMETERS</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn4">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">async</td>
+<td class="onDemandMethodReferenceParametersColumn4">true / false - sets whether getResults returns aysnchronously (ie other events can happen in the interim), or synschronously (all other events are blocked)</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">categoryId</td>
+<td class="onDemandMethodReferenceParametersColumn4">
+<p>Note: This is only required when using returnParameters.&nbsp; For normal searches, it automatically works out the category from the passed structure fields</p>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">returnParameters</td>
+<td class="onDemandMethodReferenceParametersColumn4">If set, rather than doing an actual search, this will return all fields available for the method. You could use this to build ageneric search&nbsp;page / report. See RETURN PARAMETERS below for more information.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">rf</td>
+<td class="onDemandMethodReferenceParametersColumn4">Return format.&nbsp; eg XML, JSON</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">rows</td>
+<td class="onDemandMethodReferenceParametersColumn4">number of rows to return (default 20)</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">sort</td>
+<td class="onDemandMethodReferenceParametersColumn4">2 parameters:<br />
+<ul>
+<li value="0"><span style="font-family: courier new,courier;">fieldname</span></li>
+<li value="0">direction, either <span style="font-family: courier new,courier;">asc</span> for ascending, or <span style="font-family: courier new,courier;">desc</span> for descending</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">startRow</td>
+<td class="onDemandMethodReferenceParametersColumn3"><span style="color: #000000;">First row to return.&nbsp; Can be used for scrolling through large number of results</span></td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceParameters" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceParametersHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn2">OBJECT METHODS</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn4">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addBracket</td>
+<td class="onDemandMethodReferenceParametersColumn4">If you are building a complex query, for eg you want all contacts who are male and born after 1950 and all femailes and born after 1960, you will need to use brackets in the query.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addOperator</td>
+<td class="onDemandMethodReferenceParametersColumn4">Again, if your query is complex, you will need to add '<span style="font-family: 'courier new', courier;">and</span>', or '<span style="font-family: 'courier new', courier;">or</span>' between each filter.&nbsp; If not set, '<span style="font-family: 'courier new', courier;">and</span>' is assumed.&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addField</td>
+<td class="onDemandMethodReferenceParametersColumn4">Add a field to be returned.&nbsp; Can be a comma delimited list.&nbsp; To find the available fields please refer to the Available End Points below.&nbsp; By specifying *, all available fields will be returned.&nbsp; As a note, for performance reasons, you should only specify the fields that you want.&nbsp; Finally, you can add a summaryField to perform grouping - see example 7 below.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addSummaryField</td>
+<td class="onDemandMethodReferenceParametersColumn4">Add a summary field to be returned.&nbsp; Can be a comma delimited list.&nbsp;
+<ul>
+<li>The available fields are count(*), min(fieldname), max(fieldname), and sum(fieldname)</li>
+<li>When adding a field, it needs to be aliased in order for it to return a json/xml compliant field. For eg you could add 'count(*) productcount', and the return will be in 'productcount'</li>
+<li>For xml you will get a row at the top: 178</li>
+<li>For json you will get data at the end: "summary": {"productcount": "178"}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addFilter</td>
+<td class="onDemandMethodReferenceParametersColumn4">
+<p>Use this to limit the rows returned.&nbsp; If using the object, it has 6 parameters:</p>
+<ul>
+<li value="0">FieldName - see end points for available fields</li>
+<li value="0">Comparison - see below for valid values</li>
+<li value="0">Value1 - what you are comparing to.&nbsp; If you want to compare to another field, then use field:XXXXXX, eg field:ContactPerson.Surname</li>
+<li value="0">Value2, Value3 - optional second parameter for certain comparisons.&nbsp; See below for more information</li>
+<li value="0">ApplyToSubSearchJoin - Y/N [default]. Very rarely required. It is useful if you want to include all parent records, but only those fields from a child record if the child record passes the filtering</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">addCustomOption</td>
+<td class="onDemandMethodReferenceParametersColumn4">Some searches have custom options. To use you pass the name of the option and the value.&nbsp; All objects that can have snapshots, have an option of IncludeSnapshots, with values of Y / N [default].</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">getResults</td>
+<td class="onDemandMethodReferenceParametersColumn3"><span style="color: #000000;">Use this once you have set all the properties / methods.&nbsp; It has two parameters.&nbsp; The first parameter is optional, and is the xml, or json string to search with (if you are not using the object).&nbsp; The second parameter is the callback function</span></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceParametersColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersColumn2">reset</td>
+<td class="onDemandMethodReferenceParametersColumn3"><span style="color: #000000;">Use this to clear all brackets, operators, fields etc</span></td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceReturn" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceReturnHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnHeaderColumn2">COMPARISONS</td>
+<td class="onDemandMethodReferenceReturnHeaderColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">EQUAL_TO</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">NOT_EQUAL_TO</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">GREATER_THAN</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">GREATER_THAN_OR_EQUAL_TO</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">LESS_THAN</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">LESS_THAN_OR_EQUAL_TO</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">IN_LIST</td>
+<td class="onDemandMethodReferenceReturnColumn3">Comma delimited list of values</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">NOT_IN_LIST</td>
+<td class="onDemandMethodReferenceReturnColumn3">Comma delimited list of values</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">IS_NULL</td>
+<td class="onDemandMethodReferenceReturnColumn3">A value has never been set.&nbsp; For text alues, you will probably need to use TEXT_IS_EMPTY instead</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">IS_NOT_NULL</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">APPROX_EQUAL_TO</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;For a date field, within a month either side.&nbsp; For a numeric field, within 80 - 120% of the value.&nbsp; Not available for text fields.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">IS_FAVOURITE</td>
+<td class="onDemandMethodReferenceReturnColumn3">Limits the results to those items that have been saved as favourites. Not available on all searches. When using this filter, please leave the control blank.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2"><strong>Text Specific Comparisons:</strong></td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TEXT_IS_LIKE</td>
+<td class="onDemandMethodReferenceReturnColumn3">Contains the comparison value, eg 'surname', 'TEXT_IS_LIKE', 'RON' would return rows including RONALD, ARMSTRONG, and TRON</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TEXT_IS_NOT_LIKE</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TEXT_IS_EMPTY</td>
+<td class="onDemandMethodReferenceReturnColumn3">Is blank</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TEXT_IS_NOT_EMPTY</td>
+<td class="onDemandMethodReferenceReturnColumn3">Is not blank</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TEXT_STARTS_WITH</td>
+<td class="onDemandMethodReferenceReturnColumn3">Field starts with value, eg 'surname', 'TEXT_IS_LIKE', 'RON' would return rows including RONALD, but NOT ARMSTRONG</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2"><strong>Date Specific Comparisons:</strong></td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">WEEK_TO_DATE</td>
+<td class="onDemandMethodReferenceReturnColumn3">Date is in this week.&nbsp; First day of week is Sunday</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">MONTH_TO_DATE</td>
+<td class="onDemandMethodReferenceReturnColumn3">Date is in this month</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_YEAR_TO_DATE</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_LAST_WEEK</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_NEXT_WEEK</td>
+<td class="onDemandMethodReferenceReturnColumn3">Due in production early Nov 2011</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_LAST_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_NEXT_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">Due in production early Nov 2011</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_LAST_YEAR</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">CALENDAR_NEXT_YEAR</td>
+<td class="onDemandMethodReferenceReturnColumn3">Due in production early Nov 2011</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">END_OF_LAST_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">All dates up until the end of last month</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">END_OF_NEXT_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">All dates up until the end of next month. Due in production early Nov 2011</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">AGED_THIRTY</td>
+<td class="onDemandMethodReferenceReturnColumn3">From 30 days agao until now</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">AGED_SIXTY</td>
+<td class="onDemandMethodReferenceReturnColumn3">From 60 to 31 days ago</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">AGED_NINETY</td>
+<td class="onDemandMethodReferenceReturnColumn3">From 90 to 61 days ago</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">AGED_NINETY_PLUS</td>
+<td class="onDemandMethodReferenceReturnColumn3">91 of more days ago</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">TODAY</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">YESTERDAY</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">BETWEEN</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">LAST_FINANCIAL_QUARTER</td>
+<td class="onDemandMethodReferenceReturnColumn3">Date is in the last quarter, with the quarters starting 1 July, 1 Oct, 1 Jan, 1 Apr.&nbsp; For eg, the last financial quarter as of 10 Feb 2011 would be 1Oct - 31 Dec 2010</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">LAST_52_WEEKS</td>
+<td class="onDemandMethodReferenceReturnColumn3">Any point in the last 52 weeks</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">IN_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">Date is in the month.&nbsp; Pass through a complete date, eg 1st July 2011.&nbsp; It will return all records for July for all years</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">ON_DAY_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">Date is on a particular day of month.&nbsp; Pass through a complete date.&nbsp; It will return all records on that day in that month for all years.&nbsp; A good filter for birthdays.</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">THIS_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">NEXT_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn2">BETWEEN_DAY_MONTH</td>
+<td class="onDemandMethodReferenceReturnColumn3">Search between and day of the month and month, excluding the year. &nbsp;eg good for finding birthdays within a period. &nbsp;See example 6 below.</td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceParameters" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceParametersHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn4"><strong>DATE SPECIFIC VALUES</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3"><span style="color: #000000;">Rather then specifiying a specific date (eg '1 Jan 2012'), a number of special values are available. Value 1 can be 'year', 'month', 'day', 'hour', 'minute', or 'second'. Value 2 is an integer for the number of periods to add (or subtract if negative). Value 3 is the date which can be 'now' (default), 'start_of_today', 'end_of_today', 'start_of_month', or 'end_of_month'. See the example 5 below</span></td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceParameters" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceParametersHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn4"><strong>SUB SEARCHES</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3">
+<p><span style="color: #000000;">Some advanced searches can be joined together to give extended functionality. For example, from a business search you can reference fields from Contact Person, Relationships, and Status Changes. When using this, you need to use the prefix for both the primary and sub fields. For example, when doing a CONTACT_BUSINESS_SEARCH you could specify ContactBusiness.TradeName,ContactBusiness.ContactPerson.Surname. For more information see the specific search's help.&nbsp; You can use a full stop (.), underscore (_), or colon (:) as the delimter, for eg. you could do ContactBusiness.TradeName, ContactBusiness_TradeName, or ContactBusiness:TradeName.</span></p>
+<p><span style="color: #000000;"><strong>TIP:</strong> If you are using a full stop as your delimeter, and your return format (rf) is JSON and want to reference the object using the jQuery <span style="font-family: 'courier new', courier;">.each()</span> function, then need to use, by example:</span></p>
+<p><span style="font-family: 'courier new', courier; color: #000000;">this["contactbusiness.tradeName"]&nbsp;</span></p>
+<p><span style="color: #000000;">rather than:</span></p>
+<p><span style="font-family: 'courier new', courier; color: #000000;">this.contactBusiness.tradeName</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceParameters" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceParametersHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceParametersHeaderColumn4"><strong>RETURN PARAMETERS</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3">
+<p><span style="color: #000000;">You can pass an '*' in this field, in which case it will return all available sub searches.&nbsp; Alternatively, you can pass it a comma delimited string of the sub-searches that you are interested in to minimise data transfer.&nbsp;</span></p>
+<p><span style="color: #000000;">For example, using contact_business_search, passing '*' will return sub searches, including contactbusiness.secondaryrelationshipcontactbusiness,contactbusiness.customerstatuschange etc.&nbsp; Passing a value of 'contactbusiness.customerstatuschange' will just return the fields from contactbusiness and contactbusiness.customerstatuschange</span></p>
+<p><a href="advancedsearch_meta.html">Sending request using JSON</a></p>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceReturnColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceReturnColumn3"><span style="color: #000000;">The following fields are returned:</span><br />
+<ul>
+<li value="0"><span style="font-family: 'courier new', courier; color: #000000;">name</span></li>
+<li value="0"><span style="color: #000000;"><span style="font-family: 'courier new', courier;">inputtype</span>, either textbox, textarea, or select</span></li>
+<li value="0"><span style="color: #000000;"><span style="font-family: 'courier new', courier;">datatype</span>, either numeric, date, or text</span></li>
+<li value="0"><span style="color: #000000;"><span style="font-family: 'courier new', courier;">searchendpoint</span>, for selects, the endpoint to get the list</span></li>
+<li value="0"><span style="color: #000000;"><span style="font-family: 'courier new', courier;">searchmethod</span>, for selects, the method to get the list</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="onDemandMethodReferenceExample" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td class="onDemandMethodReferenceExampleHeaderColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleHeaderColumn2">EXAMPLES</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;</strong></td>
+<td class="onDemandMethodReferenceExampleColumn2"><strong>&nbsp;</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;1.</strong></td>
+<td class="onDemandMethodReferenceExampleColumn2"><strong>Return some fields for a specific contact (based on CONTACT_PERSON_SEARCH)</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;</strong></td>
+<td class="onDemandMethodReferenceExampleColumn2"><strong>&nbsp;</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2"><span style="font-family: 'courier new', courier;">var oSearch = new AdvancedSearch();</span><br /><span style="font-family: 'courier new', courier;">oSearch.endPoint = 'contact';</span><br /><span style="font-family: 'courier new', courier;">oSearch.method = 'CONTACT_PERSON_SEARCH';</span><br /><span style="font-family: 'courier new', courier;">oSearch.addField('firstname,surname,contactbusiness,contactbusinesstext,title,titletext');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addFilter('id', 'EQUAL_TO', '1');</span><br /><span style="font-family: 'courier new', courier;">oSearch.rf = 'JSON';</span><br /><span style="font-family: 'courier new', courier;">oSearch.getResults(function(asData) { GetResultsComplete(asData);});</span><br /><br /></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1" valign="top">&nbsp;<strong>2.</strong></td>
+<td class="onDemandMethodReferenceExampleColumn2"><strong>Return the tradename for all businesses where their customer status is 1,<br />and where the tradename starts with 'arg' or 'er'.&nbsp;<br /><br />Return the first 5 rows, do the processing synchronously, and return the results in JSON format using the&nbsp;CONTACT_BUSINESS_SEARCH method.</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleColumn2">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2"><span style="font-family: 'courier new', courier;">var oSearch = new AdvancedSearch();</span><br /><span style="font-family: 'courier new', courier;">oSearch.endPoint = 'contact';</span><br /><span style="font-family: 'courier new', courier;">oSearch.method = 'CONTACT_BUSINESS_SEARCH';</span><br /><span style="font-family: 'courier new', courier;">oSearch.rows = 5;</span><br /><br /><span style="font-family: 'courier new', courier;">oSearch.addField('tradename');</span><br />&nbsp;&nbsp; &nbsp;<br /><span style="font-family: 'courier new', courier;">oSearch.addFilter('customerstatus', 'EQUAL_TO', '1');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addBracket('(');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addFilter('tradename', 'TEXT_STARTS_WITH', 'arg');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addOperator('or');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addFilter('tradename', 'TEXT_STARTS_WITH', 'er');</span><br /><span style="font-family: 'courier new', courier;">oSearch.addBracket(')');</span><br /><br /><span style="font-family: 'courier new', courier;">oSearch.rf = 'JSON';</span><br /><span style="font-family: 'courier new', courier;">oSearch.getResults(function(asData) { GetResultsComplete(asData);});</span></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;3.</strong></td>
+<td class="onDemandMethodReferenceExampleColumn2"><strong>jQuery looping through JSON return</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">
+<p><span style="font-family: 'courier new', courier;">$.each(oJSON.data.rows, function()&nbsp;</span><br /><span style="font-family: 'courier new', courier;">{&nbsp;</span><br /><span style="font-family: 'courier new', courier;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aName.push(this.firstname + ' ' + this.surname);</span><br /><span style="font-family: 'courier new', courier;">});</span></p>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;4.</strong></td>
+<td><strong>Sample XML direct post</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">Set <span style="font-family: 'courier new', courier;">advanced=1</span> and method=[method] on URL and set the POST data payload as per <a href="site/1210/advancedsearch_example.xml" class="Button">advancedsearch_example.xml</a></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;</strong></td>
+<td><strong>&nbsp;</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>&nbsp;5.</strong></td>
+<td><strong>Date filtering</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">
+<p>Records created this month:</p>
+<p><span style="font-family: 'courier new', courier;">oAdvancedSearch.addFilter('createddate', 'GREATER_THAN_OR_EQUAL_TO', 'day', '0', 'start_of_month');</span></p>
+</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">
+<p>Records due either today or tomorrow</p>
+oAdvancedSearch.addFilter('due', 'GREATER_THAN_OR_EQUAL_TO', 'hour', '0', 'start_of_today');<br />oAdvancedSearch.addFilter('due', 'LESS_THAN_OR_EQUAL_TO', 'hour', '48', 'start_of_today');</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>6.</strong></td>
+<td><strong>Find birthdays between 2 dates.</strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">oSearch.addFilter('dateofbirth', 'BETWEEN_DAY_MONTH', '25 Dec 2010', '04 Jan 2011');</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">&nbsp;</td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1"><strong>7.</strong></td>
+<td><strong>Grouping.<br /></strong></td>
+</tr>
+<tr>
+<td class="onDemandMethodReferenceExampleColumn1">&nbsp;</td>
+<td class="onDemandMethodReferenceExampleCodeColumn2">
+<p>For example, if you want all businesses who have had an invoice, and how many they have had, and what the total is:</p>
+<p><span style="font-family: 'courier new', courier;">oSearch.endPoint = 'financial';</span><br /><span style="font-family: 'courier new', courier;">oSearch.method = 'financial_invoice_search';</span></p>
+<p>oSearch.addField('ContactBusinessSentTo,ContactBusinessSentToText,count(id) SentToCount,sum(amount) SentToTotal');</p>
+<p>This could be used for preparing a set of tabs, or an accordian, with the actual records being retrieved as required.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

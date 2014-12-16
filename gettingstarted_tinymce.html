@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Getting Started TinyMCE'>
+<meta name='myds_document_id' Content='41667'>
+<title>Getting Started TinyMCE</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Getting Started TinyMCE'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 41667;
+var mydigitalstructureDocumentId = 41667;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=41667&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<h1><strong><strong><span style="color: #999999; font-size: 18pt;">GETTING STARTED</span><br /><span style="font-size: 24pt;">TINYMCE INTEGRATION</span></strong></strong></h1>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding-top: 14px; padding-bottom: 14px;"><a href="http://www.tinymce.com/" target="_blank">TinyMCE</a>&nbsp;is an open source javascript based rich text editor that can be used in a web-based application.</td>
+</tr>
+<tr>
+<td style="padding-top: 0px; padding-bottom: 8px;">
+<p>The mydigitalstructure service includes hosted versions @</p>
+<ul>
+<li>/jscripts/tinymce-4.1.5/tinymce.min.js<br /><br /></li>
+<li>/jscripts/tinymce_jquery-4.1.5/tinymce.min.js<br /><br /></li>
+<li>/jscripts/tiny_mce-3.5.8/tiny_mce.js <span style="color: #888888;">(legacy)</span></li>
+</ul>
+<p><br /><strong>or</strong>&nbsp;reference the TinyMCE hosted version @</p>
+<ul>
+<li>tinymce.cachefly.net/4.1/tinymce.min.js</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 8px; padding-bottom: 4px;">
+<p><span style="font-size: 14pt;"><strong>TINYMCE v4.x</strong></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 0px; padding-bottom: 14px;">
+<p><strong>LINK LISTS</strong></p>
+<p>When selecting links &amp; images you can configure TinyMCE to display a select list based on documents and attachments held with in the users space.<br /><br />When initialising TinyMCE with the&nbsp;tinyMCE.init()&nbsp;function add the following as required:</p>
+<p><span style="font-family: 'courier new', courier;">link_list: "/rpc/core/?method=CORE_EDITOR_LINK_SEARCH",</span><br /><span style="font-family: 'courier new', courier;"> image_list: "/rpc/core/?method=CORE_EDITOR_IMAGE_SEARCH"</span></p>
+<p><strong><br />DYNAMIC TAGS</strong></p>
+<p>Some objects within mydigitalstructure support Dynamic Tags.<br /><br />When creating a document you can insert dynamic tags which get replaced with real data by the mydigitalstructure service.<br /><br />eg if when creating a NEWS item the user inserts the dynamic tag "First Name" - then when emailed to a contact, it will be replaced with their first name.</p>
+<p><span style="font-family: 'courier new', courier;">templates:&nbsp;"/rpc/core/?method=CORE_DYNAMIC_TAG_SEARCH"</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 8px; padding-bottom: 14px;">
+<p><span style="font-size: 14pt;"><strong>TINYMCE v3.x </strong></span><span style="color: #888888;">(legacy)</span></p>
+<p><strong>LINK LISTS</strong><br /><br /><span style="font-family: 'courier new', courier;">external_link_list_url: "/ondemand/core/?method=CORE_EDITOR_LINK_SEARCH"</span><br /><span style="font-family: 'courier new', courier;">external_image_list_url: "/ondemand/core/?method=CORE_EDITOR_IMAGE_SEARCH"</span><br /><span style="font-family: 'courier new', courier;">external_media_list_url: "/ondemand/core/?method=CORE_EDITOR_MEDIA_SEARCH"</span></p>
+<p><strong><br />DYNAMIC TAGS</strong></p>
+<p>The hosted version of TinyMCE includes a plugin "dynamicTags" - which will add a button to the toolbar which allows a user to insert dynamic tags in to the document.<br /><br />When initialising TinyMCE add "dynamicTags" to the&nbsp;<span style="font-family: 'courier new', courier;">plugins:</span>&nbsp;and&nbsp;<span style="font-family: 'courier new', courier;">theme_advanced_buttons3_add:</span>&nbsp;parameters.</p>
+<p>By default the plugin dialog will show generic tags that apply to all objects. &nbsp;To include an objects specific dynamic tags then add&nbsp;<span style="font-family: 'courier new', courier;">dynamic_tags_object:&nbsp;<em>[object id]</em></span><br /><br />eg: &nbsp;<span style="font-family: 'courier new', courier;">dynamic_tags_object: "32"</span>&nbsp;for the contact person object.<br /><br />If you want to customise your own dialog then use&nbsp;<span style="font-family: 'courier new', courier;">dynamic_tags_url:</span>&nbsp;</p>
+<p>You will need to provide a page equivalent to:<br /><br /><a href="http://mydigitalstructure.com/jscripts/tiny_mce-3.4.4/plugins/dynamicTags/dynamicTags.html">/jscripts/tiny_mce-3.4.4/plugins/dynamicTags/dynamicTags.html</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><br /><br /></p>
+</td>
+<td style="width: 40px;" valign="top">&nbsp;</td>
+<td style="width: 200px;" valign="top">
+<table style="width: 220px; background-color: #f5f5f5;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td valign="top"><strong>METHODS</strong></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top">
+<p><a href="CORE_EDITOR_LINK_SEARCH.html">CORE_EDITOR_LINK_SEARCH</a><br /><br /><a href="CORE_EDITOR_IMAGE_SEARCH.html">CORE_EDITOR_IMAGE_SEARCH</a><br /><br /><a href="CORE_EDITOR_MEDIA_SEARCH.html">CORE_EDITOR_MEDIA_SEARCH</a></p>
+<p><a href="CORE_DYNAMIC_TAG_SEARCH.html">CORE_DYNAMIC_TAG_SEARCH</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong>JS CODE</strong></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><a href="http://mydigitalstructure.com/jscripts/tiny_mce-3.4.4/plugins/dynamicTags/mydigitalstructure_tiny_mce_plugin_dynamicTags.zip">TinyMCE 3.x DynamicTag Plugin Source Cod</a><a href="http://mydigitalstructure.com/jscripts/tiny_mce-3.4.4/plugins/dynamicTags/mydigitalstructure_tiny_mce_plugin_dynamicTags.zip">e</a></td>
+</tr>
+<tr>
+<td valign="top"><strong>LINKS FOR 4.x</strong></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><a href="http://skin.tinymce.com/" target="_blank">TinyMCE Skin Creator</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><a href="http://pixabay.com/en/blog/posts/a-modern-custom-theme-for-tinymce-4-40/" target="_blank">A&nbsp;modern light skin</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><a href="https://github.com/ibcom/1blankspace/blob/master/1blankspace.format-2.0.1.js" target="_blank">Sample integration code</a><br /><span style="color: #888888; font-size: 8pt;">(search for TinyMCE)</span></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><a href="http://www.tinymce.com/wiki.php/Plugin:template" target="_blank">Templates "snippets" plugin</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">// <![CDATA[
+var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/4v2ZZ7p3IwSGdDK0VzJjNw.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+// ]]></script>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

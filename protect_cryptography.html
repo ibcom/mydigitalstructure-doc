@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Protection & Security Cryptography'>
+<meta name='myds_document_id' Content='55800'>
+<title>Protection & Security Cryptography</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Protection & Security Cryptography'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 55800;
+var mydigitalstructureDocumentId = 55800;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=55800&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td style="padding-top: 8px;">
+<h1><strong><span style="color: #888888;">PROTECT</span><br /><span style="font-size: 24pt;"><strong>DATA DISCLOSURE &amp; MANIPULATION MITIGATION USING CRYPTOGRAPHY</strong></span></strong></h1>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding-right: 90px;">
+<p>Cryptography is the practice and study of techniques for secure communication in the presence of third parties (called adversaries) - <span style="color: #000000;"><a href="http://en.wikipedia.org/wiki/Cryptography" target="_blank">wikipedia</a></span></p>
+<p><span style="color: #000000;">In relation to mydigitalstructure the focus is on at-rest protection that can be gained via the use of cryptography - given the in-transit protection is inherent in the use of https/SSL protocols.</span></p>
+<p><span style="color: #000000;">mydigitalstructure is non-prescriptive in the cryptography scheme you choose to implement as the application owner - mydigitalstructure does provide some helper methods for storing keys and ciphertext (hashes, encypted data etc)</span></p>
+<p><span style="color: #000000;">The <a href="1blankspace.html" target="_blank">1blankspace</a> open-source namespace/webapp uses the <a href="https://code.google.com/p/crypto-js/" target="_blank">crypto-js</a> library and the AES algorithm within its <a href="1blankspace_namespace_util_protect.html" target="_blank">util.protect</a>&nbsp;namespace.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 18px; padding-bottom: 4px;"><span style="font-size: 14pt;"><strong>AT-REST PROTECTION USE CASES</strong></span></td>
+</tr>
+<tr>
+<td style="padding-top: 4px; padding-bottom: 4px;">
+<table style="background-color: #f5f5f5; ; width: 100%;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td style="width: 150px;"><span style="color: #333333;"><strong>Ensure data has not been manipulated by any 3rd party (adversary).</strong></span>
+<p><span style="color: #333333;">Protect against manipulation at the lowest level.</span></p>
+</td>
+<td style="background-color: #ffffff;">ie.
+<p>Create a hash of the data record using the private key and store on the record.<br /><br />On retrieval from the hosted model (mydigitalstructure) the&nbsp;View-Controller checks the hash before using the data.</p>
+<p>&nbsp;</p>
+</td>
+<td style="background-color: #ffffff;">Use
+<p><strong><span style="font-family: 'courier new', courier;"><a href="CORE_PROTECT_CIPHERTEXT_MANAGE.html">CORE_PROTECT_CIPHERTEXT</a><br /><a href="http://mydigitalstructure.com/CORE_PROTECT_SIGNATURE"></a></span></strong></p>
+<p>to store the hash (signature) in the context of the data.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 150px;"><span style="color: #333333;"><strong>Encrypt sensitive data.</strong></span>
+<p><span style="color: #333333;">Protect against non-authorised disclosure at the lowest level.</span></p>
+</td>
+<td style="background-color: #ffffff;">ie.
+<p>Store public key in mydigitalstructure space.<br /><br />Encrypt data using stored public key&nbsp;for at rest protection of sensitive data.<br /><br />Decrypt data using Javascript &amp; matching private key stored locally.</p>
+</td>
+<td style="background-color: #ffffff;">
+<p><strong>Store your generated public key within your space on mydigitalstructure</strong> using</p>
+<p><strong><span style="font-family: 'courier new', courier;"><a href="CORE_PROTECT_KEY_MANAGE.html">CORE_PROTECT_KEY</a></span></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 18px;">
+<p><span style="font-size: 14pt;"><strong>CRYPTOGRAPHY MECHANISMS COMMONLY USED<br />IN ENTERPRISE APPLICATION SECURITY</strong></span></p>
+<ul>
+<li><a href="http://serverfault.com/questions/9708/what-is-a-pem-file-and-how-does-it-differ-from-other-openssl-generated-key-file" target="_blank">Key formats</a></li>
+<li><a href="http://kjur.github.io/jsrsasign/sample-rsasign.html" target="_blank">Sample RSA Signing</a></li>
+<li><a href="http://kjur.github.io/jsrsasign/sample-ecdsa.html" target="_blank">Sample Generate Key Pair</a></li>
+<li>Hashing: AES/SHA-256/SHA-512/MD5</li>
+<li>Public Key: RSA</li>
+<li><a href="http://mydigitalstructure.com/jscripts/cryptojs-3.1.2/" target="_blank">crypto-js @ mydigitalstructure</a></li>
+<li><a href="http://www.slideshare.net/kevinhakanson/developers-guide-to-javascript-and-web-cryptography" target="_blank">Developers guide to web cryptography</a></li>
+<li><a href="https://www.symantec.com/business/support/resources/sites/BUSINESS/content/live/TECHNICAL_SOLUTION/149000/TECH149738/en_US/introcrypto.pdf" target="_blank">An introduction to cryptography</a></li>
+</ul>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="padding-bottom: 14px;"><hr /></td>
+</tr>
+<tr>
+<td style="padding-top: 4px; padding-bottom: 4px;"><span style="font-size: 14pt;"><span style="font-size: 14pt; color: #888888;">EXAMPLE 1</span><strong><br /></strong><span style="color: #888888;">SYMMETRIC (SINGLE KEY)</span><strong><br />DATA&nbsp;MANIPULATION PROTECTION PATTERN<br />WITH MVC &amp; MYDIGITALSTRUCTURE</strong></span></td>
+</tr>
+<tr>
+<td style="padding-top: 4px; padding-bottom: 4px;">
+<p>Add hashed signature to data record using symmetric cryptographic pattern (single private key):</p>
+<ol>
+<li>Generate a private key</li>
+<li>Store on the secure local device using Web Browser localStorage API.</li>
+<li>Retrieve the key and using select data record attributes (typically includes modifieddate etc) create SHA-512 hash (acting as digital signature)</li>
+<li>POST to mydigitalstructure using <span style="font-family: 'courier new', courier;">CORE_PROTECT_HASH_MANAGE</span></li>
+</ol>
+<p>Check hashed signature</p>
+<ol>
+<li>Get the private key using the localStorage API</li>
+<li>Get the data record and hash using SHA-512</li>
+<li>Get the existing hash (signature) using&nbsp;<span style="font-family: 'courier new', courier;">CORE_PROTECT_CIPHERTEXT_SEARCH</span></li>
+<li><span>Check the just created hash and existing hash and if match data is valid (un-manipulated)</span></li>
+</ol>
+<p><span>If you have multiple users within the space and they need to share the data, then you need to distribute the keys to each of them, unsually in a pem formated file.</span></p>
+<p><span>Don't use mydigitalstructure to store the private key - as it reduces the value of the protection.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 18px; padding-bottom: 4px;"><span style="font-size: 14pt;"><span style="font-size: 14pt; color: #888888;">EXAMPLE 2</span><strong><br /></strong><span style="color: #888888;">ASYMMETRIC (KEY PAIR)</span><strong><br />DATA&nbsp;MANIPULATION PROTECTION PATTERN<br />WITH MVC &amp; MYDIGITALSTRUCTURE</strong></span></td>
+</tr>
+<tr>
+<td style="padding-top: 0px; padding-bottom: 4px;"><span style="color: #808080;">Less strict than example 2 as some of the knowledge (public key) is stored on mydigitalstructure and only concerned with in-transit manipulation and don't trust SSL or over non-encrypted connection.</span>
+<p><span style="color: #808080;">You could use this with the MESSAGING_CONVERSATION endpoint where want message (posts &amp; comments) integrity. ie when viewing the post/comment and with the correct private key, you can be ensured it has not been manipulated in-transit.&nbsp;</span></p>
+<p>Add hashed signature to data record using asymmetric cryptographic pattern (public-private key):</p>
+<ol>
+<li>Generate a public / private key pair</li>
+<li>Store the private key on the secure local device using Web Browser localStorage API.</li>
+<li>Store the public key on the secure mydigitalstructure service using <strong><span style="font-family: 'courier new', courier;"><a href="CORE_PROTECT_KEY_MANAGE.html">CORE_PROTECT_KEY_MANAGE</a></span>&nbsp;</strong>api method.&nbsp;</li>
+<li>Retrieve the "public" key using <strong><span style="font-family: 'courier new', courier;"><a href="CORE_PROTECT_KEY_SEARCH.html">CORE_PROTECT_KEY_SEARCH</a></span>&nbsp;</strong>and&nbsp;using select data record attributes (typically includes modifieddate etc)&nbsp;create RSA/SHA-512 hash (acting as digital signature)</li>
+<li>POST the actual data record to mydigitalstructure using object _MANAGE method (ie INVOICE_MANAGE)</li>
+<li>POST the hash to mydigitalstructure using <span style="font-family: 'courier new', courier;">CORE_PROTECT_CIPHERTEXT_MANAGE</span></li>
+</ol>
+<p>Check hashed signature</p>
+<ol>
+<li>Get the private key using the localStorage API</li>
+<li>Get the data record</li>
+<li>Get the existing hash (signature) using&nbsp;<span style="font-family: 'courier new', courier;">CORE_PROTECT_CIPHERTEXT_SEARCH</span></li>
+<li>Decrypt using the private key</li>
+<li>Check the decrypted select data attributes match select data attributes retrieved.</li>
+</ol></td>
+</tr>
+<tr>
+<td style="padding-top: 18px; padding-bottom: 4px;"><span style="font-size: 14pt;"><span style="font-size: 14pt; color: #888888;">EXAMPLE 3</span><strong><br /></strong><span style="color: #888888;">ASYMMETRIC (KEY PAIR)</span><strong><br />DATA&nbsp;DISCLOSURE PROTECTION PATTERN<br />WITH MVC &amp; MYDIGITALSTRUCTURE</strong></span></td>
+</tr>
+<tr>
+<td style="padding-top: 0px; padding-bottom: 4px;"><span style="color: #808080;">Using a public key stored on mydigitalstructure to protect data, beyond the existing authentication and authorisation mechanisms within mydigitalstructure.</span><span style="color: #808080;"><br /></span>
+<p>Add hashed signature to data record using asymmetric cryptographic pattern (public-private key):</p>
+<ol>
+<li>Generate a public / private key pair</li>
+<li>Store the private key on the secure local device using Web Browser localStorage API.</li>
+<li>Store the public key on the secure mydigitalstructure service using <strong><span style="color: #808080; font-family: 'courier new', courier;"><a href="CORE_PROTECT_KEY_MANAGE.html">CORE_PROTECT_KEY_MANAGE</a></span>&nbsp;</strong>api method.&nbsp;</li>
+<li>Retrieve the "public" key using <strong><span style="color: #808080; font-family: 'courier new', courier;"><a href="CORE_PROTECT_KEY_SEARCH.html">CORE_PROTECT_KEY_SEARCH</a></span>&nbsp;</strong>and&nbsp;using select data record attributes (typically includes modifieddate etc)&nbsp;create RSA/SHA-512 encrypted data.</li>
+<li>POST the hash to mydigitalstructure using <span style="color: #808080;"><span style="color: #808080; font-family: 'courier new', courier;">CORE_PROTECT_CIPHERTEXT_MANAGE</span>.</span>&nbsp;You could also create an text type structure element and store it there - it could then be retrieved as part of the generic advanced search (although not searchable) and decrypted by the client with the private key.</li>
+</ol><span style="color: #808080;">Do not save the data attributes that you are protecting to the data record - they are being saved in the ciphertext.</span><br />
+<p>Check hashed signature</p>
+<ol>
+<li>Get the private key using the localStorage API</li>
+<li>Get the data record</li>
+<li>Get the data record hash using&nbsp;<span style="color: #808080; font-family: 'courier new', courier;">CORE_PROTECT_CIPHERTEXT_SEARCH</span></li>
+<li>Decrypt using the private key</li>
+<li>Add the data to object data record.</li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">&nbsp;</p>
+</td>
+<td style="width: 25px;" valign="top">
+<p>&nbsp;</p>
+</td>
+<td style="width: 150px;" valign="top">
+<table style="margin-top: 14px; width: 150px; background-color: #f5f5f5;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="protect.html">Protection &amp; Security</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="gettingstarted_authentication.html">Authentication protection</a><a href="protect.html"></a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://en.wikipedia.org/wiki/Cryptography" target="_blank">Cryptography</a>&nbsp;<span style="color: #888888;">(wikipedia)</span><strong><br /></strong></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="https://code.google.com/p/crypto-js/" target="_blank">crypto-js<br /></a><span style="color: #888888;">(<a href="http://mydigitalstructure.com/jscripts/cryptojs-3.1.2/" target="_blank"><span style="color: #888888;">hosted @ mydigitalstructure</span></a>)</span></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://kjur.github.io/jsrsasign/" target="_blank">jsrsasign</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://kjur.github.io/jsjws/" target="_blank">jsjwt</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://bitwiseshiftleft.github.io/sjcl/" target="_blank">Standford Crypto JS Library</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://en.wikipedia.org/wiki/Elliptic_Curve_DSA" target="_blank">ECDSA</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff; text-align: left;" align="right" valign="top"><a href="http://en.wikipedia.org/wiki/PKCS" target="_blank">PKCS</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: right;"><a href="http://msdn.microsoft.com/en-us/library/0ss79b2x(v=vs.110).aspx" target="_blank"><span style="color: #c0c0c0;"><span style="color: #c0c0c0;">....</span></span></a></p>
+</td>
+<td style="width: 25px;" valign="top">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

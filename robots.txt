@@ -1,0 +1,79 @@
+User-Agent: *
+Disallow: /accounting/
+Disallow: /agriculture/
+Disallow: /asms/
+Disallow: /audit/
+Disallow: /automation/
+Disallow: /configure/
+Disallow: /dashboard/
+Disallow: /decision/
+Disallow: /documents/
+Disallow: /education/
+Disallow: /errors/
+Disallow: /extract/
+Disallow: /format/
+Disallow: /ibmail/
+Disallow: /images/
+Disallow: /import/
+Disallow: /issue/
+Disallow: /jscripts/
+Disallow: /lib/
+Disallow: /media/
+Disallow: /membership/
+Disallow: /mobile/
+Disallow: /news/
+Disallow: /obms/
+Disallow: /ofms/
+Disallow: /ofsms/
+Disallow: /otms/
+Disallow: /partners/
+Disallow: /personal/
+Disallow: /portal/
+Disallow: /referral/
+Disallow: /register/
+Disallow: /risk/
+Disallow: /safety/
+Disallow: /security/
+Disallow: /support/
+Disallow: /transport/
+Disallow: /vwa/
+Disallow: /wc_test/
+Disallow: /ws/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

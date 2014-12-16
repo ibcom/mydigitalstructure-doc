@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Getting Started Access Control'>
+<meta name='myds_document_id' Content='38510'>
+<title>Getting Started Access Control</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Getting Started Access Control'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 38510;
+var mydigitalstructureDocumentId = 38510;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=38510&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<h1><strong><span style="color: #888888;">GETTING STARTED</span><br /><strong><span style="font-size: 24pt;">ACCESS CONTROL</span><br /></strong></strong></h1>
+<p>The mydigitalstructure access control is based on a "<em>common security language (CSL)</em>" - which works as the gatekeeper for the "<em>common functional language (CFL)</em>" eg the endpoints and methods.<br /><br />Every functional&nbsp;request and parameter can be protected via the access layer, by describing the access allowed for each user or group of users.&nbsp;<br /><br />OAuth2.0 access uses this same common security language, by specification of the <span style="font-family: courier new,courier;">scope</span> in an access request.<br /><br />System administrators&nbsp;can manage access to any method within an endpoint&nbsp;which is included with&nbsp;the&nbsp;membership subscription&nbsp;for&nbsp;the space being secured.<br /><br />You can also restrict access to parameters and specific values of parameters - eg user A can only see orders where status is approved.&nbsp; You can&nbsp;set global parameter level access that acts across all methods and endpoints.<br /><br />In spaces that have single or limited users then the user parameter <span style="font-family: courier new,courier;">unrestrictedaccess</span> can be set to&nbsp;yes&nbsp;- this then allows unlimited access to all subscribed endpoints and methods.<br /><br />For spaces with many users and different levels of access then the following can be used to match the use case to the functional and access control.</p>
+<p><strong>OVERVIEW</strong><br /><br /><img src="site/1210/security_overview_1.png" alt="Security Overview" width="560" height="397" /><br /><br /></p>
+</td>
+<td style="width: 40px;" valign="top">
+<p>&nbsp;</p>
+</td>
+<td valign="top">
+<table style="background-color: #f5f5f5; width: 180px;" border="0" cellpadding="6">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="gettingstarted.html">Getting Started</a></p>
+<p><a href="endpoint_setup.html">Access Set up</a> <span style="color: #888888;">(SETUP)</span></p>
+<p><a href="endpoint_logon.html">Authentication</a>&nbsp;<span style="color: #888888;">(LOGON)</span></p>
+<p><span style="color: #888888;"><a href="gettingstarted_oauth2.html">OAuth 2.0</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 25px;" valign="top">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td><strong>SETTING UP USER ACCESS</strong><br /><br />This is a natural extension of the <span style="font-family: courier new,courier;">SETUP_USER_</span> methods used for setting up users.<br /><br /> 
+<table style="background-color: #f5f5f5; width: 100%; border: white 0px solid;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_ENDPOINT_SEARCH.html">SETUP_ENDPOINT_SEARCH</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Returns a list of available endpoints based on the spaces memberships eg <span style="font-family: courier new,courier;">CONTACT.<br /></span></td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_METHOD_SEARCH.html">SETUP_METHOD_SEARCH</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Returns a list of available methods based on the spaces memberships eg <span style="font-family: courier new,courier;">CONTACT_PERSON_MANAGE</span>.<br /></td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_METHOD_ACCESS_SEARCH.html">SETUP_METHOD_ACCESS_SEARCH</a><span style="color: #c0c0c0;">/</span><a href="SETUP_METHOD_ACCESS_MANAGE.html">_MANAGE</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Set up the mapping between the functional system requirements and the access control - set up many method access roles which allow access to methods and also allow or disallow access to parameters.</td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_ROLE_SEARCH.html">SETUP_ROLE_SEARCH</a><span style="color: #c0c0c0;">/</span><a href="SETUP_ROLE_MANAGE.html">_MANAGE</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Define roles</td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_ROLE_METHOD_ACCESS_SEARCH.html">SETUP_ROLE_METHOD_ACCESS_SEARCH</a><span style="color: #c0c0c0;">/</span><a href="SETUP_ROLE_METHOD_ACCESS_MANAGE.html">_MANAGE</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Link users to the functional access rules&nbsp;- as&nbsp;set up above.</td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_ROLE_PARAMETER_ACCESS_SEARCH.html">SETUP_ROLE_PARAMETER_ACCESS_SEARCH</a><span style="color: #c0c0c0;">/</span><a href="SETUP_ROLE_PARAMETER_ACCESS_MANAGE.html">_MANAGE</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">For each functional access rule - set up additional resrictions to parameters in the context of that rule.</td>
+</tr>
+<tr>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_USER_ROLE_SEARCH.html">SETUP_USER_ROLE_SEARCH</a><span style="color: #c0c0c0;">/</span><a href="SETUP_USER_ROLE_MANAGE.html">_MANAGE</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">Give each user the appropriate roles.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+<td style="width: 40px;" valign="top">
+<p>&nbsp;</p>
+</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">
+<p><a href="gettingstarted.html">&nbsp;</a></p>
+</td>
+<td style="width: 25px;" valign="top">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td><strong>RESELLERS<br /><br /></strong>Methods for linking endpoints to memberships:<br /><br /><a href="http://mydigitalstructure.com/SETUP_MEMBERSHIP_ENDPOINT_MANAGE">SETUP_MEMBERSHIP_ENDPOINT_MANAGE</a>&nbsp;&amp; <a href="SETUP_MEMBERSHIP_ENDPOINT_SEARCH.html">SETUP_MEMBERSHIP_ENDPOINT_SEARCH</a><strong>
+<p>&nbsp;</p>
+</strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_ENDPOINT_SEARCH.html">&nbsp;</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">&nbsp;</td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; width: 250px;" valign="top"><strong><span style="font-family: courier new,courier; font-size: 8pt;"><span style="font-family: courier new,courier;"><a href="SETUP_METHOD_SEARCH.html">&nbsp;</a></span></span></strong></td>
+<td style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: white; font-size: 10pt;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">// <![CDATA[
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/4v2ZZ7p3IwSGdDK0VzJjNw.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+// ]]></script>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Getting Started Building a Blog'>
+<meta name='myds_document_id' Content='41812'>
+<title>Getting Started Building a Blog</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Getting Started Building a Blog'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 41812;
+var mydigitalstructureDocumentId = 41812;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=41812&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<h1><strong><strong><span style="color: #808080;">GETTING STARTED</span><br />BUILDING A INDEXABLE BLOG<br />BASED ON MESSAGING CONVERSATION&nbsp;</strong></strong></h1>
+<p>You can build a blog using the mydigitalstructure MESSAGING endpoint and AJAX techniques to service the user experience, however search engines, like Google, can not easily index AJAX based content.</p>
+<p>This getting started document steps you through creating a fully customisable blog that is both search engine indexable and also supports progressive enhancement for the human user experience.<br /><br />For Google (or alike) to crawl the blog it needs to be able to follow true http links.</p>
+<p>The mydigitalstructure service supports a number of dynamic tags that will we render the HTML content (with links) as required.<br /><br />A key dynamic tag, for the purpose of indexing, is the "Conversation Post Index" tag. &nbsp; It creates a simple list that can be used by the search engine to link to each post and thus index its content.<br /><br /><strong>EXAMPLE BLOG&nbsp;</strong></p>
+<p>An example blog can be found at <a href="developwith.html" target="_blank">http://mydigitalstructure.com/developwith</a>&nbsp;- it uses two simple documents and a css file.<br /><br /></p>
+<ul>
+<li><span style="font-family: 'courier new', courier;">/developwith</span> content is at&nbsp;<a href="site/1210/1210.messaging.post.001.html" target="_blank">/site/1210/1210.messaging.post.001.html</a>&nbsp;- you must set the document type to System Object and select object as "Messaging Conversation".<br /><br />&nbsp;</li>
+<li><span><span style="font-family: 'courier new', courier;">/developwith.index</span> content is at&nbsp;</span><a href="site/1210/1210.messaging.post.index.001.html" target="_blank">/site/1210/1210.messaging.post.index.001.html</a>&nbsp;<span>- you must set the document type to System Object and select object as "Messaging Conversation".<br /><br /><br /></span></li>
+<li><span>css file as at&nbsp;<a href="site/1210/1210.format.messaging.001.css" target="_blank">/site/1210/1210.format.messaging.001.css</a></span></li>
+</ul>
+<p><br /><strong>DOCUMENT DYNAMIC TAGS <br /><br /></strong>Set the document to System Template and Object = Messenger Conversation.<strong><br /></strong></p>
+<ul>
+<li><span style="font-family: 'courier new', courier;">Conversation ID</span></li>
+<li><span style="font-family: 'courier new', courier;">Title</span></li>
+<li><span style="font-family: 'courier new', courier;">Owner</span></li>
+<li><span style="font-family: 'courier new', courier;">Created Date</span></li>
+<li><span style="font-family: 'courier new', courier;">Posts Per Page</span></li>
+<li><span style="font-family: 'courier new', courier;">Comments Per Page</span></li>
+<li><span style="font-family: 'courier new', courier;">Posts Total</span></li>
+<li><span style="font-family: 'courier new', courier;">Posts Index</span></li>
+<li><span style="font-family: 'courier new', courier;">Posts</span></li>
+<li><span style="font-family: 'courier new', courier;">Posts Summary - summary of posts by year and month</span></li>
+<li><span style="font-family: 'courier new', courier;">Back URL</span></li>
+<li><span style="font-family: 'courier new', courier;">Forward URL</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>URL TAG PARAMETERS</strong></p>
+<p>You can also supply some tag parameters via the URL at the time of rendering;</p>
+<ul>
+<li><span style="font-family: 'courier new', courier;">id:</span> - conversation ID</li>
+<li><span style="font-family: 'courier new', courier;">start:</span> - start position, for pagination</li>
+<li><span style="font-family: 'courier new', courier;">posts:</span> - posts per page</li>
+<li><span style="font-family: 'courier new', courier;">search:</span> - search the post subject and body</li>
+<li><span style="font-family: 'courier new', courier;">post:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span><span style="font-family: 'courier new', courier;">p:</span> - post ID</span></li>
+<li><span style="font-family: 'courier new', courier;">subject:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span style="font-family: 'courier new', courier;">s:</span> - search post subject only</li>
+<li><span style="font-family: 'courier new', courier;">day:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span style="font-family: 'courier new', courier;">d:</span> - day of the month</li>
+<li><span style="font-family: 'courier new', courier;">month:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span style="font-family: 'courier new', courier;">m:</span> - month of the year (eg Jan = 1)</li>
+<li><span style="font-family: 'courier new', courier;">year:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span style="font-family: 'courier new', courier;">y:</span> - 4 digit year</li>
+<li>i<span style="font-family: 'courier new', courier;">nlasthours:</span><span style="font-family: 'courier new', courier;">,&nbsp;</span><span style="font-family: 'courier new', courier;">ilh:</span> - posted in the last X hours</li>
+</ul>
+<p>You can specify many using a "," delimiter.</p>
+<p>Examples:</p>
+<p>If your blog is at url <span style="font-family: 'courier new', courier;">/myblog</span> and want search for posts with <span style="font-family: 'courier new', courier;">OAuth</span> then:<br /><br /><span style="font-family: 'courier new', courier;">/myblog/search:OAuth</span></p>
+<p>Search for posts in December 2011:<br /><br /><span style="font-family: 'courier new', courier;">/myblog/y:2011,m:12</span></p>
+<p><br /><strong>POSTS INDEX &amp; POSTS DYNAMIC TAGS</strong></p>
+<p>Both these tags support parameters.<br /><br />For the index tag the URL is key eg <span style="font-family: 'courier new', courier;">/myblog</span><br /><br />Both have default div based formatting which can be targetted using css (see example above). &nbsp;You can also set your own format, by creating a document and then setting its ID as the Template Document parameter.<br /><br />The template supports the following tags:</p>
+<ul>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_ID]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_SUBJECT]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_DATE]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_DATE_TIME]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_MESSAGE]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_MESSAGE_FIRST_PARAGRAPH]]</span></li>
+<li><span style="font-family: 'courier new', courier;">[[CONVERSATION_POST_COMMENT_COUNT]]</span></li>
+</ul>
+<p>&nbsp;</p>
+</td>
+<td style="width: 40px;" valign="top">&nbsp;</td>
+<td style="width: 200px;" valign="top">
+<table style="background-color: #f5f5f5; width: 220px;" border="0" cellpadding="6">
+<tbody>
+<tr>
+<td valign="top">
+<p><strong>METHODS<br /><br /></strong><a href="endpoint_messaging.html">MESSAGING Endpoint</a><br /><br /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">// <![CDATA[
+var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/4v2ZZ7p3IwSGdDK0VzJjNw.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+// ]]></script>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+{
+	"objects":
+	[
+		{
+			"name": "user",
+			"id": "22",
+			"title": "Users",
+			"type": "1",
+			"notes": "",
+			"rpc": "SETUP_USER"
+		},
+		{
+			"name": "action",
+			"id": "17",
+			"title": "Actions",
+			"type": "2",
+			"notes": ""
+		},
+		{
+			"name": "attachment",
+			"id": "327",
+			"title": "Attachments",
+			"type": "2",
+			"notes": ""
+		},
+		{
+			"name": "contact-person",
+			"id": "32",
+			"title": "Person Contacts",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "contact-business",
+			"id": "12",
+			"title": "Business Contacts",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "opportunity",
+			"id": "35",
+			"title": "Opportunities",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "project",
+			"id": "1",
+			"title": "Projects",
+			"type": "3",
+			"notes": "",
+			"dependants": ["11", "265"]
+		},
+		{
+			"name": "project-task",
+			"id": "11",
+			"title": "Project Tasks",
+			"type": "4",
+			"notes": "",
+			"dependants": ["263", "264"]
+		},
+		{
+			"name": "project-task-status",
+			"id": "263",
+			"title": "Project Task Status",
+			"type": "4",
+			"notes": ""
+		},
+		{
+			"name": "project-task-type",
+			"id": "264",
+			"title": "Project Task Type",
+			"type": "4",
+			"notes": ""
+		},
+		{
+			"name": "project-team",
+			"id": "265",
+			"title": "Project Team",
+			"type": "4",
+			"notes": ""
+		},
+		{
+			"name": "project-type",
+			"id": "266",
+			"title": "Project Type",
+			"type": "4",
+			"notes": ""
+		},
+		{
+			"name": "news",
+			"id": "19",
+			"title": "Mews",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "event",
+			"id": "39",
+			"title": "Events",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "product",
+			"id": "16",
+			"title": "Products",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "order",
+			"id": "43",
+			"title": "Orders",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "invoice",
+			"id": "5",
+			"title": "Invoices",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "expense",
+			"id": "2",
+			"title": "Invoices",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "receipt",
+			"id": "6",
+			"title": "Receipts",
+			"type": "3",
+			"notes": ""
+		},
+		{
+			"name": "payment",
+			"id": "3",
+			"title": "Payments",
+			"type": "3",
+			"notes": ""
+		}
+	],
+	"options":
+	{
+		"type":
+		{
+			"1": "System",
+			"2": "Core",
+			"3": "Primary",
+			"4": "Secondary"
+		}
+	}
+}

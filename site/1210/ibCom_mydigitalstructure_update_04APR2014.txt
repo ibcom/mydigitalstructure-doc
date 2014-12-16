@@ -1,0 +1,131 @@
+[MYDIGITALSTRUCTURE_UPDATE:04APR2014:START]
+
+# ALL:
+- [FIX] If passing a blank date, picks up previous non-blank date.
+- [FIX] ObjectContext incorrect values fixed
+- [FIX] Advanced search	returns error if EQUAL_TO and comma delimited list of numbers
+- [NEW] All searchessupport structure fields as default
+
+# ACTION_MANAGE
+- [FIX] Some in-consistency issues with attribute names
+- [NEW] Supports bulk delete / update.
+
+# CONTACT_PERSON_MANAGE
+- [NEW] Supports bulk delete / update.
+
+# ACTION_SEARCH
+- [NEW] Message attribute added.
+
+# AGRI_CERTIFICATE_MANAGE / SEARCH
+- [NEW] Added audit (id).
+
+# AUDIT_MANAGE
+- Add membershipstatus.
+
+# AUDIT_MANAGE 
+- [NEW] Snapshotting enabled.
+
+# AUDIT_SEARCH
+- [NEW] Snapshotting enabled.
+
+# DOCUMENT_MANAGE
+- [NEW] Snapshotting enabled.
+
+# DOCUMENT_SEARCH
+- [NEW] Snapshotting enabled.
+
+# CONTACT_BUSINESS_MANAGE
+- [NEW] Snapshotting enabled.
+
+# CONTACT_BUSINESS_SEARCH
+- [NEW] Snapshotting enabled.
+
+# CONTACT_PERSON_MANAGE
+- [NEW] Snapshotting enabled.
+
+# CONTACT_PERSON_SEARCH
+- [NEW] Snapshotting enabled.
+
+# CONTACT_PERSON_MANAGE
+- [NEW[ Block editing of mobile / email on contacts linked to users
+
+# CONTACT_PERSON_MANAGE
+- [FIX] New contacts now defaulting debtor / creditor fields.
+
+# CONTACT_BUSINESS_MANAGE
+- [FIX] New contacts now defaulting debtor / creditor fields.
+
+# CORE_ATTACHMENT_DOWNLOAD
+- [FIX] Downloading attachments with a comma in file name fails in Chrome (due to header splitting security issue).
+
+# CORE_ATTACHMENT_READ
+- Can now set to treat all data as text - allcolumnstext=Y.
+
+# CORE_FILE_MANAGE
+- [NEW] Now /rpc method
+
+# CORE_GET_USER_DETAILS
+- [FIX] correct contactbusiness	returned if user linked different contact business.
+
+# CORE_PROTECT_CIPHERTEXT_MANAGE
+- [NEW] New method to save encrypted text and associate to object in context.
+
+# CORE_PROTECT_KEY_MANAGE
+- [NEW] Store encryption keys.
+
+CORE_SECURE_TOKEN_MANAGE
+- [NEW] Now /rpc method
+
+CORE_SECURE_TOKEN_SEARCH
+- [NEW] Now /rpc method
+
+# FINANCIAL_DEBTOR_SEARCH
+- [NEW] Includes totals
+
+# FINANCIAL_DEBTOR_SEARCH
+- [NEW] Includes totals
+
+# FINANCIAL_DEBTORSCREDITORS_PROCESSING_MANAGE
+- [NEW] New /rpc method
+
+# ISSUE_MANAGE
+- [NEW] Now /rpc method
+
+# MESSAGING_EMAIL_SEND
+- [NEW] Added saveaginstcontbusiness
+- [NEW] Added saveaginstcontperson
+
+# MESSAGING_EMAIL_SEND
+- [FIX[ Messaging template tags no longer case sensitive
+
+# NEWS_SEND
+- [NEW] Now /rpc method
+
+# NEWS_TRACKING_SEARCH
+- [NEW] Now /rpc method
+
+# SETUP_MESSAGING_ACCOUNT_MANAGE
+- [NEW] Now /rpc method
+
+# SETUP_MESSAGING_ACCOUNT_MANAGE
+- [NEW] Can now set own SMTP server (ie smtp.gmail.com)
+
+# SETUP_SITE_HTTP_HEADER_MANAGE
+- [NEW] Can now add http headers to website.
+
+# SETUP_SITE_HTTP_HEADER_SEARCH
+- [NEW] Can now get http headers to website.
+
+# SETUP_STRUCTURE_MANAGE
+- [NEW] Added InternalReference
+
+# SETUP_ISSUE_MANAGE
+- [NEW] Added InternalReference
+
+# SETUP_USER_MANAGE
+- [FIX] SessionTimeout no longer being blanked, if not set.
+
+# STRUCTURE_DATA_VALUE_MANAGE
+- [FIX] formattedvalue is updated on change of option value.
+
+[MYDIGITALSTRUCTURE_UPDATE:04APR2014:END]

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Getting Started OAuth2 (As Consumer)'>
+<meta name='myds_document_id' Content='41796'>
+<title>Getting Started OAuth2 (As Consumer)</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Getting Started OAuth2 (As Consumer)'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 41796;
+var mydigitalstructureDocumentId = 41796;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=41796&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<h1><strong>GETTING STARTED OAUTH2.0<br /></strong><span style="color: #888888; font-weight: normal; font-size: 12pt;">AS CONSUMER</span></h1>
+<p>OAuth2 allows secure API authentication using https.<br /><br />The mydigitalstructure onDemand service allows you to simply access OAuth2 based webservices - &nbsp;making sure your application keys stay protected in the model and not exposed to the client.<br /><br />You can effectively extend the mydigitalstructure organisational model and thus the number of use cases, under the service oriented architecture.<br /><br />A key service that support OAuth2 is facebook.&nbsp;</p>
+<p><a href="http://oauth.net/2/" target="_blank">About OAuth2</a></p>
+<p><strong><br />FACEBOOK EXAMPLE</strong></p>
+<p>Get a users details.</p>
+<p><span style="color: #808080;"><strong>Assumptions:</strong></span><br /><br />You have a facebook account.</p>
+<p><span style="color: #808080;"><strong>Example Steps as structure administrator (once only):</strong></span></p>
+<table style="width: 550px;" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="text-align: center; width: 15px;" valign="top"><strong>1</strong></td>
+<td><strong>On the facebook service you first need to do a once off Application registration</strong> - this is effectively giving permission for 3rd party applications to request access to your facebook account.<br /><br /><a href="http://developers.facebook.com/docs/beta/opengraph/tutorial/" target="_blank">Create a new app in facebook<br />&nbsp;</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td><strong>The application will set up 2 keys for you:</strong><br /># Consumer key<br /># Consumer secret
+<p>You then need to use:<br /><br /><span style="font-family: 'courier new', courier;">/ondemand/setup/?method=<a href="SETUP_URL_MANAGE.html">SETUP_URL_MANAGE</a>&amp;type=8&amp;urllogon=<span style="color: #888888;">[Consumer key]</span>&amp;urlpassword=<span style="color: #888888;">[Consumer secret]</span>&amp;private=N&amp;title=facebook</span><br /><br />These application credentials will be used automatically when requesting an user access token in the following steps.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #808080;"><strong>Example Steps as a user giving permission (once only per user):<br /><br /></strong><span style="color: #000000;">You can now request a token (which is done in 3 phases).&nbsp;</span></span></p>
+<table style="width: 550px;" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="text-align: center; width: 15px;" valign="top"><strong>1</strong></td>
+<td><strong>Request an application level code:</strong><br /><br /><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="http://mydigitalstructure.com/NETWORK_OAUTH_REQUEST_CODE">NETWORK_OAUTH2_REQUEST_CODE</a>&amp;type=8</span>
+<p>You will be returned a parameter:&nbsp;<span style="font-family: 'courier new', courier;">authenticateurl -</span>&nbsp;you need to redirect to this URL. &nbsp;At this point you need to add the scope of your request for access eg for access to news stream add: <span style="font-family: 'courier new', courier;">&amp;scope=read_stream</span></p>
+<p>Facebook will then call back to the url you specified when setting up the application and as supplied in the NETWORK_OAUTH_REQUEST_CODE call as <span style="font-family: 'courier new', courier;">&amp;urlcallback=</span><br /><br />You wil get back a parameter in the query string that you need to extract:<br /># <span style="font-family: 'courier new', courier;">code</span>&nbsp;</p>
+<p>They will be used in the phase 2 in step 4 next.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td><strong>Requesting the user access token</strong>
+<p><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="NETWORK_OAUTH_METHOD.html">NETWORK_OAUTH2_METHOD</a>&amp;type=8&amp;code=[code]&amp;remember=1</span></p>
+<p>This gets back the <span style="font-family: 'courier new', courier;">access_token</span>&nbsp;for the user and saves it against their account for future use.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" valign="top"><strong>3</strong></td>
+<td><strong>Getting user details on facebook:</strong><br /><br /><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="NETWORK_OAUTH_METHOD.html">NETWORK_OAUTH2_METHOD</a>&amp;type=8<span>&amp;token=1</span></span><span style="font-family: 'courier new', courier;"><br /></span><span style="font-family: 'courier new', courier;">&amp;urlendpoint=https://graph.facebook.com/me</span><br /><span style="font-family: 'courier new', courier;"><br /></span>
+<p><strong>Getting list of other links</strong><br /><br /><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="NETWORK_OAUTH_METHOD.html">NETWORK_OAUTH2_METHOD</a>&amp;type=8&amp;token=1<br />&amp;urlendpoint=https://graph.facebook.com/[id]?metadata=1</span></p>
+<p><br /><strong>Getting news feed</strong></p>
+<p><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="NETWORK_OAUTH_METHOD.html">NETWORK_OAUTH2_METHOD</a>&amp;type=8&amp;token=1<br />&amp;urlendpoint=https://graph.facebook.com/[id]/feed</span></p>
+<p><strong><br />Getting home page / stream</strong><br /><br />You need to add <span style="font-family: 'courier new', courier;">&amp;scope=read_stream</span> to the url returned in step 1 for this to work.</p>
+<p><span style="font-family: 'courier new', courier;">/ondemand/network/?method=<a href="NETWORK_OAUTH_METHOD.html">NETWORK_OAUTH2_METHOD</a>&amp;type=8&amp;token=1</span><br /><span style="font-family: 'courier new', courier;">&amp;urlendpoint=https://graph.facebook.com/[id]/home&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" valign="top"><strong>4</strong></td>
+<td>You can use any method with the&nbsp;<a href="http://developers.facebook.com/docs/reference/api" target="_blank">Facebook REST API</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td style="width: 40px;" valign="top">
+<p>&nbsp;</p>
+</td>
+<td valign="top">
+<table style="width: 180px;" border="0" cellpadding="6">
+<tbody>
+<tr>
+<td style="text-align: left;" align="right" valign="top">&nbsp; <img title="oauth-2-sm.png" src="site/1210/oauth-2-sm.png" alt="oauth-2-sm.png" width="124" height="123" /></td>
+</tr>
+<tr>
+<td style="text-align: center; height: 25px;" align="right" valign="top">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 180px;" border="0" cellpadding="6">
+<tbody>
+<tr>
+<td style="background-color: #f5f5f5;" valign="top"><span style="font-size: 12pt;"><strong>BUSINESS GRAPH</strong></span>
+<p><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">Graph theory is the theory of links and nodes and how they interconnect &ndash; so a &ldquo;graph&rdquo; represents these links, on facebook.com the links to friends represents your social graph.</span></p>
+<p><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">The links between contacts, invoices etc is an organisations &ldquo;business graph&rdquo;.</span></p>
+<p><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;"><a href="http://www.barabasilab.com/LinkedBook/" target="_blank">Some reading</a>...</span></p>
+</td>
+</tr>
+<tr>
+<td style="height: 25px;" valign="top">
+<p><span style="font-size: 12pt;"><strong>&nbsp;</strong></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color: #f5f5f5;" valign="top">
+<p><span style="font-size: 12pt;"><strong>OPEN GRAPH</strong></span></p>
+<p><span style="font-family: arial,helvetica,sans-serif; font-size: 10pt;">The Open Graph protocol enables any web page to become a rich object in a social graph. <br /><br /><a href="http://ogp.me/" target="_blank">Some reading...</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 25px;" valign="top">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">// <![CDATA[
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/4v2ZZ7p3IwSGdDK0VzJjNw.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+// ]]></script>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

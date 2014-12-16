@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Community Amazon AWS'>
+<meta name='myds_document_id' Content='42999'>
+<title>Community Amazon AWS</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Community Amazon AWS'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 42999;
+var mydigitalstructureDocumentId = 42999;
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=42999&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding-bottom: 10px;">
+<h1><strong><span style="color: #888888; font-size: 18pt;">COMMUNITY</span><br /><span style="font-size: 24pt;">AMAZON WEB SERVICES</span></strong></h1>
+</td>
+</tr>
+<tr>
+<td style="padding-bottom: 24px;">Notes based on ibCom's use of AWS to host mydigitalstructure.com.</td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;"><strong>BACKGROUND</strong></span></td>
+</tr>
+<tr>
+<td style="padding-bottom: 18px; padding-top: 8px;">mydigitalstructure is a fully hosted webapi and platform - a "backend as a service" - it allows developers to use a common model and set of methods to rapidly build modern enterprise apps.
+<p>Functionality ranges from hosting a public website through to full accounting.</p>
+<p>There are 25 core objects (ie contacts, projects, invoices etc) with 700+ methods (ie add contact, search for contact).</p>
+<p>mydigitalstructure is a fully hosted multi-tenanted environment that services 1000s of enterprise spaces - with demand changing from one moment to the next.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;"><strong>DESIGN GOALS</strong></span></td>
+</tr>
+<tr>
+<td style="padding-bottom: 10px; padding-top: 8px;">
+<ul>
+<li><span>Highly dynamic infrastructure that can react quickly to demand both on the up and the down.<br /><br /></span></li>
+<li><span>Self-managing - allowing the ibCom model and code to run within a set of infrastructure rules that requires minimal human interaction.<br /><br /></span></li>
+<li><span>Supply costs that are economically aligned with a competitive marketplace.</span></li>
+</ul>
+<ul>
+<li><span>Work with common well-proven standards (protocols) above and below the mydigitalstructure layer.</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 15px;"><span style="font-size: 14pt;"><strong>EXECUTION</strong></span></td>
+</tr>
+<tr>
+<td style="padding-bottom: 18px; padding-top: 8px;">
+<table style="background-color: #f5f5f5; ; width: 100%;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td style="width: 50px; text-align: center;" valign="top"><span style="color: #888888;"><strong>PHASE</strong></span></td>
+<td><strong><span style="color: #888888;">SERVICES</span></strong></td>
+</tr>
+<tr>
+<td style="width: 50px; text-align: center; padding-top: 8px;" valign="top"><span style="color: #888888;"><span style="font-size: 14pt;"><strong>1</strong></span><br /><br /></span></td>
+<td style="background-color: #ffffff;">
+<ul>
+<li><strong>IAM</strong><span style="color: #888888;">, Identity Access Management, with Multi Factor Authentication (MFA)</span></li>
+<li><strong>ELB</strong><span style="color: #888888;">, Elastic Load Balancers x 6</span></li>
+<li><strong>Route53</strong><span style="color: #888888;">, DNS Management</span></li>
+<li><strong>EIP</strong><span style="color: #888888;">, Elastic IP x 1</span></li>
+<li><strong>EC2</strong><span style="color: #888888;">, Elastic Compute Service x 2+</span></li>
+<li><strong>EBS</strong><span style="color: #888888;">, Elastic Block Store (Volume) with EC2</span></li>
+<li><strong>RDS</strong><span style="color: #888888;">, Relational Database Service</span></li>
+<li><strong>VPC</strong><span style="color: #888888;">, Virtual Private Cloud</span></li>
+<li><strong>SES</strong><span style="color: #888888;">, Simple Email Service</span></li>
+<li><strong>CLI</strong><span style="color: #888888;">, Command Line Interface</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 50px; text-align: center; padding-top: 8px;" valign="top"><span style="font-size: 14pt;"><strong><span style="color: #888888;">2</span></strong></span></td>
+<td style="background-color: #ffffff;">
+<ul>
+<li><span style="color: #888888;"><em><span>Phase 1 +</span></em></span></li>
+<li><span><strong>DynamoDB</strong><span>, Non-relational database service</span></span></li>
+<li><span><strong>S3</strong><span style="color: #888888;">, Simple Storage Service</span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;"><strong>&nbsp;</strong></span></p>
+<p><span style="font-size: 12pt;"><strong><img title="ibCom_Infrastructure_Public_1.0" src="site/1210/ibCom_Infrastructure_Public_1.0.png" alt="ibCom_Infrastructure_Public_1.0" width="600" height="312" /></strong></span></p>
+<table style="background-color: #f5f5f5; ; width: 100%;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td style="width: 50px;" valign="top"><span style="color: #888888;"><strong>Security Groups</strong></span></td>
+<td style="background-color: #ffffff;">For managing port access - https access onto load balancers and then http to the EC2 app services within the VPC.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><span style="color: #888888;"><strong>IAM</strong><br /><br /></span></td>
+<td style="background-color: #ffffff;">Control access to services and access via command line interface, using sourceIP restrictions as a condition of the access policy.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">VPC</span></strong></td>
+<td style="background-color: #ffffff;">Virtual private cloud (network) - for isolated communication between services.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">ELB</span></strong></td>
+<td style="background-color: #ffffff;">Five load balancers to handle the core platform SSL/https access points:
+<ul>
+<li><span>webapi: mydigitalstructure.com</span></li>
+<li><span>platform: 1blankspace.com</span></li>
+<li><span style="color: #888888;"><em>+ 2 to handle "classic" platforms</em></span></li>
+<li><span style="color: #888888;"><em>+ 1 to handle a retail service</em></span></li>
+</ul>
+<p><span>ELB IP addresses are referenced via DNS names - allowing for arraying of the ELB appliances.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">Route53</span></strong></td>
+<td style="background-color: #ffffff;">DNS for CNAME entries for friendly names - including alias entries for root domains.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">EIP</span></strong></td>
+<td style="background-color: #ffffff;">One elastic IP address for administrative access. &nbsp;Not 100% required - may be eliminated in phase 2.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">EC2</span></strong></td>
+<td style="background-color: #ffffff;">Servicing the http based app (where the code lives) and also for sharing the primary EBS volume.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">EBS</span></strong></td>
+<td style="background-color: #ffffff;">For file storage; as attachments to objects. &nbsp;Current app needs synchronise access to files - next phase will introduce the "in-lab" S3 based file storage.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">RDS</span></strong></td>
+<td style="background-color: #ffffff;">For model data storage.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">SES</span></strong></td>
+<td style="background-color: #ffffff;">For sending emails - each space (tenant) has its own domain verified for sending emails. &nbsp;Services adhoc emails and also eNews campaigns. &nbsp;Uses SMTP. &nbsp;Phase 2 will convert to webservice - so app lives with-in the http protocol.</td>
+</tr>
+<tr>
+<td style="width: 50px;" valign="top"><strong><span style="color: #888888;">CLI</span></strong></td>
+<td style="background-color: #ffffff;">More a tool than a service - but important for scripting commands. &nbsp;Important use of sourceIP condition in policy.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt; color: #888888;"><strong>USEFUL LINKS</strong></span></td>
+</tr>
+<tr>
+<td style="padding-bottom: 10px; padding-top: 8px;">
+<ul>
+<li><a target="_blank" href="https://github.com/newsapps/beeswithmachineguns">Bees with machine guns (auto-scaling testing)</a></li>
+<li><a target="_blank" href="https://github.com/Netflix/SimianArmy">Chaos Monkey (fault testing)</a></li>
+<li><a href="http://aws.amazon.com/datasets/41740" target="_blank">Common Crawl Web Dataset</a></li>
+<li><a href="https://github.com/netik/UTCMenuClock/downloads" target="_blank">Mac OSX UTS Menu Clock</a></li>
+<li><a href="http://thefarmdigital.com/blog/technology/how-do-i-setup-ssl-on-aws-elactic-load-balancerelb/" target="_blank">Setting up SSL on ELB</a></li>
+<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/ExampleIAMPolicies.html" target="_blank">Example IAM policies</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 40px;" valign="top">&nbsp;</td>
+<td style="width: 200px;" valign="top">
+<table style="width: 100%; background-color: #f5f5f5;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td style="background-color: #ffffff;" valign="top"><strong><img title="amazon_small" src="site/1210/amazon_small.png" alt="amazon_small" width="175" height="64" /><br /></strong></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="http://aws.amazon.com" target="_blank">About</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="https://www.youtube.com/watch?v=jOhbTAU4OPI" target="_blank">What is cloud computing?</a> <span style="color: #888888;">(video)</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="background-color: #f5f5f5; width: 100%;" border="0" cellspacing="3" cellpadding="6">
+<tbody>
+<tr>
+<td><span style="color: #888888;"><strong>mydigitalstructure</strong></span></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="community_aws_read.html">Accelerating AWS enterprise app development with mydigitalstructure (READ)</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="stats.html">Key usage statistics</a><a href="community_aws_read.html"></a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="gettingstarted_regions.html">Regions</a></td>
+</tr>
+<tr>
+<td style="background-color: #ffffff;"><a href="gettingstarted_aws.html">Integration with AWS</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><a href="stats.html">&nbsp;</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="mce-mce-text/javascript">// <![CDATA[
+var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/4v2ZZ7p3IwSGdDK0VzJjNw.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+// ]]></script>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

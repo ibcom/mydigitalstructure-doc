@@ -1,0 +1,23 @@
+<advancedSearch>
+  <field>
+    <name>reference</name>
+  </field>
+  <field>
+    <name>title</name>
+  </field>
+  <summaryField>
+    <name>count auditcount</name>
+  </summaryField>
+  <filter>
+    <name>audit_title</name>
+    <comparison>TEXT_STARTS_WITH</comparison>
+    <value1>1</value1>
+    <value2></value2>
+  </filter>
+  <options>
+    <rf>json</rf>
+    <startrow>0</startrow>
+    <rows>20</rows>
+    <returnparameters>false</returnparameters>
+  </options>
+</advancedSearch>

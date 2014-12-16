@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/* Global */
+
+body.mceContentBody {
+	background: #FFF;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	background: url("1210.bg.png") #ddd;
+	font-family: Helvetica,Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:#393939;
+	font-size:14px;
+	}
+
+img
+{
+	border:0;
+}
+
+a
+{
+	color: #1fa2d3;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #095784;
+}
+
+span.sep
+{
+	color: #A0A0A0;
+}
+
+span.mandatory
+{
+	color: #ff6600;
+}
+	
+/* Structure */
+
+#container
+{
+	width:1024px;
+	overflow:auto;
+	margin:auto;
+}
+
+#header
+{
+	height:177px;
+	background: url("1210.bg_header.png") no-repeat;
+}
+
+#nav
+{
+	font-weight:bold;
+	margin-left:35px;
+	padding-top:8px;
+	clear:left;
+}
+
+#nav ul
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#nav ul li
+{
+	display:inline;
+	float:left;
+}
+
+#nav li a 
+{
+	display:block;
+	width:auto;
+	height:auto;
+	text-decoration:none;
+	text-align:center;
+	border-right:1px solid #FFF;
+	cursor:pointer;
+	color:#FFF;
+	margin:0;
+	font-size:16px;
+	padding:4px 15px;
+}
+
+
+#nav ul li a:hover, #nav ul li:hover 
+{
+	color:#CCC !important;
+}
+
+a.last
+{
+	border-right:none !important;
+}
+
+#logo
+{
+	float:left;
+	width:223px;
+	height:108px;
+	margin: 28px 0 0 45px;
+}
+
+#logo h1{
+	text-indent: -9999px;}
+
+#main
+{
+	background: url("1210.bg_main.png") repeat-y;
+	min-height:800px;
+	padding: 15px 65px 0px 45px;
+	line-height:18px;
+}
+
+#main h1
+{
+	color:#000;
+	font-size:20px;
+	line-height:28px;
+	padding:0;
+	margin: 5px 0 10px 0;}
+
+#footer
+{
+	background: url("1210.bg_footer.png") no-repeat;
+	height: 38px;
+	font-size:11px;
+	color: #7c7c7c;
+	text-align:center;
+	padding-top:30px;
+}
+
+#footer a
+{
+	color: #7c7c7c;
+	text-decoration:none;
+}
+
+#footer a:hover
+{
+	color: #095784;
+}
+
+td
+{
+	vertical-align: top;
+}	
+
+td.onDemandEndPointHeaderEndPoint
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}	
+
+td.onDemandMethodReferenceHeaderMethod
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+td.onDemandMethodReferenceHeaderStatus
+{
+	color: red;
+	font-weight: bold;
+	text-align: right;
+}
+
+td.onDemandMethodReferenceHeaderEndpoint
+{
+	text-align: right;
+	width: 200px;
+}
+
+table.onDemandMethodReferenceParameters, table.onDemandMethodReferenceReturn, table.onDemandMethodReferenceExample
+{
+	width: 100%;
+	padding-top: 20px;
+}
+
+table.onDemandMethodReferenceHeader, table.onDemandEndpointHeader
+{
+	width: 100%;
+	padding-top: 10px;
+}
+
+td.onDemandMethodReferenceParametersHeaderColumn2
+{
+	font-weight: bold;
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+	width: 200px;
+}
+
+td.onDemandMethodReferenceParametersHeaderColumn3
+{
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+	width: 150px;
+}
+
+td.onDemandMethodReferenceParametersHeaderColumn4
+{
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+}
+
+td.onDemandMethodReferenceReturnHeaderColumn2
+{
+	font-weight: bold;
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+	width: 200px;
+}
+
+td.onDemandMethodReferenceReturnHeaderColumn3
+{
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+}
+
+td.onDemandMethodReferenceExampleHeaderColumn2
+{
+	font-weight: bold;
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+}
+
+td.borderBottom
+{
+	border-bottom-style:solid;
+	border-width: 2px;
+	border-color: #B8B8B8;
+}
+
+td.borderBottomThin
+{
+	border-bottom-style:solid;
+	border-width: 1px;
+	border-color: #B8B8B8;
+}
+
+td.onDemandMethodReferenceParametersHeaderColumn1, td.onDemandMethodReferenceReturnColumn1, td.onDemandMethodReferenceExampleColumn1, td.onDemandMethodReferenceHeaderColumn1
+{
+	width: 25px;
+}	
+
+td.onDemandMethodReferenceExampleCodeColumn2
+{
+	font-family: "courier new";
+	font-size: 0.925em;
+}
+
+td.onDemandMethodReferenceHeaderMethodURL, td.onDemandEndPointHeaderURL
+{
+	font-family: "courier new";
+	font-size: 0.925em;
+	padding-bottom: 10px;
+}
+
+td.onDemandMethodReferenceParametersColumn2, td.onDemandMethodReferenceReturnColumn2
+{
+	font-family: "courier new";
+	font-size: 0.925em;
+}
+
+td.onDemandMethodReferenceParametersColumn3, td.onDemandMethodReferenceReturnColumn3
+{
+	color: #999999;
+}
+
+td.onDemandEndpointSubHeader
+{
+	font-weight: bold;
+	color: #888888;
+	border-bottom-style:solid;
+	border-width: 1px;
+	border-color: #B8B8B8;
+}

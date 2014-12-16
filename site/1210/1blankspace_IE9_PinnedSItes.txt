@@ -1,0 +1,76 @@
+http://msdn.microsoft.com/en-us/library/gg491727(v=vs.85).aspx
+http://www.xiconeditor.com/
+
+<meta name="application-name" content="1blankspace.com" />
+<meta name="msapplication-tooltip" content="1blankspace" />
+<meta name="msapplication-window" content="width=1024;height=768" />
+<meta name="msapplication-navbutton-color" content="#E5E5E5" />
+<meta name="msapplication-starturl" content="./" />
+
+<meta name="msapplication-task"
+      content="name=Home;
+      action-uri=./#home;
+	  window-type=self;
+      icon-uri=images/1blankspace_home.ico" />
+<meta name="msapplication-task" 
+      content="name=Contacts;
+      action-uri=./#contacts;
+	  window-type=self;
+      icon-uri=Images/1blankspace_contacts.ico" />
+
+	  
+Javasctipt Examples:	  
+	  
+try {
+    if (window.external.msIsSiteMode()) {
+        // Site mode is supported and active.
+    }
+    else {
+        // Site mode is supported, but inactive.
+    }
+}
+catch (ex) {
+    // Site mode is not supported.
+}
+
+window.onload = function()
+{
+    try {
+        if (window.external.msIsSiteMode()) {
+            // Continue initialization.
+        }
+        else {
+            // Display prompt.
+            document.getElementById('divPinSite').style.display = "block";
+        }
+    }
+    catch (ex) {
+        // Fail silently.
+    }
+}
+
+var g_ext = null;        // Global variable.
+
+window.onload = function()
+{
+    try {
+        if (window.external.msIsSiteMode()) {
+            g_ext = window.external;
+            // Continue initialization.
+        }
+    }
+    catch (ex) {
+        // Fail silently.
+    }
+}
+
+if (g_ext) {
+    g_ext.msSiteModeAddJumpListItem("Task3", "task3.html", "img/icon.ico");
+    g_ext.msSiteModeShowJumpList();
+}
+
+window.external.msSiteModeCreateJumplist('Recent Videos');
+window.external.msSiteModeAddJumpListItem('Video1', 'Video1.htm', 'Images/Video.ico');
+window.external.msSiteModeShowJumpList(); 
+
+

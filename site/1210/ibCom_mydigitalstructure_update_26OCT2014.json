@@ -1,0 +1,122 @@
+{
+	"reference": "IBCOM_MYDIGITALSTRUCTURE_UPDATE",
+	"date": "26 OCT 2014",
+	"version": "26OCT2014",
+	"updates":
+	[
+		{
+			"namespace": "CORE",
+			"methods":
+			[
+				"CORE_ATTACHMENT_ARCHIVE",
+				"CORE_ATTACHMENT_UNARCHIVE",
+				"CORE_ATTACHMENT_UNARCHIVE_UPLOAD"
+			],
+			"type": "new",
+			"comment": "Glacier archiving and unarchiving of attachments",
+			"urls":
+			[
+				"http://mydigitalstructure.com/pricing_cold_storage"
+			]
+		},
+		{
+			"namespace": "MESSAGING",
+			"methods":
+			[
+				"MESSAGING_EMAIL_SEND"
+			],
+			"type": "new",
+			"comment": "Block sending to more than 50 recipients via AWS",
+			"urls":
+			[
+				"http://mydigitalstructure.com/gettingstarted_email"
+			]
+		},
+		{
+			"namespace": "CONTACT",
+			"methods":
+			[
+				"CONTACT_BUSINESS_MANAGE"
+			],
+			"type": "new",
+			"comment": "Allow passing multiple ids to CONTACT_BUSINESS_MANAGE",
+			"urls": []
+		},
+		{
+			"namespace": "ALL",
+			"methods": [],
+			"type": "new",
+			"comment": "Return Etag / last-modified and respond with 304 where required",
+			"urls":
+			[
+				"http://mydigitalstructure.com/gettingstarted_rest"
+			]
+		},
+		{
+			"namespace": "FINANCIAL",
+			"methods":
+			[
+				"FINANCIAL_DEBTOR_SEARCH",
+				"FINANCIAL_CREDITOR_SEARCH"
+			],
+			"type": "new",
+			"comment": "Debtor & creditor sorting by total",
+			"urls": []
+		},
+		{
+			"namespace": "ALL",
+			"methods": [],
+			"type": "new",
+			"comment": "Accept UnixTimestamp as date filter value / format for dates on MANAGE",
+			"urls": []
+		},
+		{
+			"namespace": "SETUP",
+			"methods":
+			[
+				"SETUP_SITE_DOCUMENT_SEARCH",
+				"SETUP_SITE_DOCUMENT_MANAGE"
+			],
+			"type": "new",
+			"comment": "Added DocumentObject to SETUP_SITE_DOCUMENT_SEARCH",
+			"urls": []
+		},
+		{
+			"namespace": "ACTION",
+			"methods":
+			[
+				"ACTION_MANAGE"
+			],
+			"type": "new",
+			"comment": "Added SourceAction to ACTION_MANAGE.  It can be used for recurring actions etc",
+			"urls":
+			[
+				"http://mydigitalstructure.com/action_manage"
+			]
+		},
+		{
+			"namespace": "ALL",
+			"methods": [],
+			"type": "new",
+			"comment": "Ability to limit the number of instances of an object class (ie only 50 contact persons).  For use in trial spaces and alike.",
+			"urls": []
+		},
+		{
+			"namespace": "ATTACH",
+			"methods":
+			[
+				"SETUP_AWS_ACCOUNT_SEARCH",
+				"SETUP_AWS_ACCOUNT_MANAGE",
+				"SETUP_AWS_S3_BUCKET_MANAGE",
+				"SETUP_AWS_S3_BUCKET_SEARCH",
+				"CORE_ATTACH"
+			],
+			"type": "new",
+			"comment": "AWS Simple Storage Service (S3) integration.",
+			"urls":
+			[
+				"http://mydigitalstructure.com/gettingstarted_aws_s3"
+			]
+		}
+	]
+}

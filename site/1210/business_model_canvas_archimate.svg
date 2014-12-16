@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with EazyDraw for Mac ( http://www.eazydraw.com/ ) -->
+
+<svg
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="409.188063667"
+    height="322.781237024"
+    viewBox="0, 0, 409.188063667, 322.781237024"
+    preserveAspectRatio="none"
+    id="svg2">
+   <defs
+       id="defs_DE457318"/>
+   <metadata
+       id="metadata7">
+      <rdf:RDF>
+         <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+            <dc:title></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g
+       id="layer_Paper"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1;stroke-miterlimit:10">
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="00F35F67"
+          x="0"
+          y="0"
+          width="74.0326511393"
+          height="105.843700416"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="09B9E877"
+          x="0.37109375"
+          y="114.009765625"
+          width="193.14156037"
+          height="36.5272941659"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="C1472577"
+          x="81.5703125"
+          y="1.12890625"
+          width="66.5189792643"
+          height="44.9413566659"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="D3F0C677"
+          x="156.7890625"
+          y="1.2421875"
+          width="76.2885105143"
+          height="105.246044166"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="4EDD8777"
+          x="241.947265625"
+          y="0.37109375"
+          width="80.5736667643"
+          height="53.0956535409"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="79175877"
+          x="241.840494792"
+          y="60.916015625"
+          width="80.5873386393"
+          height="44.8586743742"/>
+      <text
+          id="444CFF67"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="8.7213709269" y="13.4604330188">Key</tspan>
+         <tspan x="8.7213709269" y="24.4604330188">Partnerships</tspan>
+      </text>
+      <text
+          id="82E92977"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="6.4655115519" y="128.300276769">Cost Structure</tspan>
+      </text>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="A443C2C7"
+          x="103.128446691"
+          y="195.43523248"
+          width="193.14156037"
+          height="23.0726704063"/>
+      <text
+          id="B443C2C7"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="164.555616133" y="209.395973434">Business Layer</tspan>
+      </text>
+      <text
+          id="40998BC7"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="normal"
+          font-style="normal"
+          transform="matrix(1,-0,0,1,-0,0)">
+         <tspan x="31.9170498319" y="222.798528216">ArchiMate</tspan>
+      </text>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="B0CD73C7"
+          x="102.670204442"
+          y="224.819492058"
+          width="193.14156037"
+          height="97.9617449652"/>
+      <text
+          id="D0CD73C7"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="158.449191003" y="240.226014951">Application Layer</tspan>
+      </text>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="4ACA9977"
+          x="200.98572366"
+          y="114.852833"
+          width="196.029104049"
+          height="35.4979972909"/>
+      <text
+          id="6ACA9977"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="210.715545708" y="126.51817618">Revenue Streams</tspan>
+      </text>
+      <text
+          id="51C57577"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="90.4655115519" y="14.9330892688">Key</tspan>
+         <tspan x="90.4655115519" y="25.9330892688">Activities</tspan>
+      </text>
+      <text
+          id="2670F677"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="165.797542802" y="15.6752767688">Value</tspan>
+         <tspan x="165.797542802" y="26.6752767688">Propositions</tspan>
+      </text>
+      <text
+          id="B643B777"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="251.570980302" y="15.3041830188">Customer</tspan>
+         <tspan x="251.570980302" y="26.3041830188">Relationships</tspan>
+      </text>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="E4AF2387"
+          x="332.113371299"
+          y="1.018484702315"
+          width="65.0489747929"
+          height="104.617906676"/>
+      <text
+          id="05AF2387"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="341.737085976" y="15.9515739711">Customer</tspan>
+         <tspan x="341.737085976" y="26.9515739711">Segments</tspan>
+      </text>
+      <text
+          id="15F87877"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="250.111995927" y="75.9936361438">Channels</tspan>
+      </text>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="7CDAF577"
+          x="81.54296875"
+          y="56.234375"
+          width="66.4916355143"
+          height="49.2519035409"/>
+      <text
+          id="8CDAF577"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="89.9362146769" y="69.0522298938">Key</tspan>
+         <tspan x="89.9362146769" y="80.0522298938">Resource</tspan>
+      </text>
+      <polygon
+          style="fill:#1899CB;stroke:none"
+          id="A86B39B7"
+          points="197.189101332,185.390672081 181.012980251,157.372808499 213.365222413,157.372808499"/>
+      <polygon
+          style="fill:#5D5D5D;stroke:none"
+          id="78E3C4D7"
+          points="189.442956216,259.287911186 196.755159808,246.622803049 204.0673634,259.287911186"/>
+      <rect
+          style="fill:#5D5D5D;stroke:none"
+          id="8AF864C7"
+          x="111.937459633"
+          y="258.938557315"
+          width="176.549372249"
+          height="57.3583563903"/>
+      <rect
+          style="fill:#F3F3F3;stroke:none"
+          id="944D26C7"
+          x="121.753216912"
+          y="281.736091252"
+          width="158.460953753"
+          height="27.4655564661"/>
+      <text
+          id="B44D26C7"
+          style="fill:#5D5D5D;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="159.910398205" y="293.601923682">Technology Layer</tspan>
+         <tspan font-weight="normal">&#x20;</tspan>
+         <tspan x="168.831296642" y="304.601923682" font-weight="normal" font-style="italic">(infrastructure)</tspan>
+      </text>
+      <text
+          id="A0B3C7C7"
+          style="fill:#FFFFFF;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="158.379780098" y="273.482470815">mydigitalstructure</tspan>
+      </text>
+      <line
+          style="fill:none;stroke:#1899CB;stroke-width:2.125984251969"
+          id="54263AC7"
+          x1="2.422490014738"
+          y1="158.008920908"
+          x2="395.613433601"
+          y2="158.338691098"/>
+      <line
+          style="fill:none;stroke-dasharray:4,4"
+          id="1A301EC7"
+          x1="81.0735234011"
+          y1="203.142310517"
+          x2="81.0735234011"
+          y2="240.260359718"/>
+      <line
+          style="fill:none;stroke-dasharray:4,4"
+          id="22D44EC7"
+          x1="81.0735234011"
+          y1="203.142310517"
+          x2="92.8712153137"
+          y2="203.142310517"/>
+      <line
+          style="fill:none;stroke-dasharray:4,4"
+          id="64466EC7"
+          x1="80.8444022763"
+          y1="240.130376428"
+          x2="92.6420941889"
+          y2="240.130376428"/>
+      <text
+          id="6607E8D7"
+          style="fill:#A0A0A0;stroke:none"
+          font-family="Helvetica"
+          font-size="9"
+          font-weight="normal"
+          font-style="normal"
+          transform="matrix(1,-0,0,1,-0,0)">
+         <tspan x="208.043499926" y="256.256317459">http</tspan>
+      </text>
+   </g>
+</svg>

@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='myds_document_title' Content='Community 1blankspace'>
+<meta name='myds_document_id' Content='43901'>
+<title>Community 1blankspace</title>
+<meta name='description' content=''>
+<meta name='keywords' content='Community 1blankspace'>
+<link rel=stylesheet href='site/1210/1210.format-1.1.1.css'>
+<link rel="shortcut icon" href='site/1210/favicon.ico'>
+<link rel="stylesheet" href="/jscripts/css/prettify.css"/><link rel="stylesheet" href="/jscripts/jqueryui/darkness.css"/><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script><script src="site/1210/1210.home-1.0.10.js" type="text/javascript"></script>
+
+<script src="/jscripts/prettify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="site/1210/1210.format.messaging.001.css"><link rel="stylesheet" href="site/1210/1210.invite.css">
+</head>
+<script language="JavaScript">
+var msOnDemandDocumentId = 43901;
+var mydigitalstructureDocumentId = 43901;
+var msOnDemandContextId = '';
+var mydigitalstructureContextId = '';
+var msOnDemandSiteId = 1210;
+var mydigitalstructureSiteId = 1210;
+
+function cmdPrint_OnClick() {window.print();}
+function cmdAllSections_OnClick() {window.location.href = 'document_PublicView.asp?select=43901&allsections=True&site=1210';}
+function PageSetup2(){}
+</script>
+<body>
+<table myds='LayoutTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0><tr>
+
+<td myds='LayoutTable1.LeftBorder' height='100%' width=''  Class='border1 borderLeft' >
+
+&nbsp;
+
+</td><td myds='LayoutTable1.MainTable1' valign=TOP width='900' height='100%'>
+
+<table width='900' myds='MainTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+<tr><td myds='MainTable1.HeaderTable1' valign=TOP height=0>
+
+<table myds='HeaderTable1' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr><td myds='HeaderTable1' valign=TOP height='100%'>
+
+
+
+</td></tr>
+</table>
+
+</td></tr>
+<tr><td valign=TOP height='100%'>
+<table myds='MainTable2' width='100%' height='100%' border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td myds='MainTable1.Main' valign=TOP height='100%'>
+
+<div id="container">
+<div id="header"><a href="http://ibCom.biz" target="_blank"> </a>
+<div id="logo"><a href="http://ibCom.biz" target="_blank"></a><a href="http://ibCom.biz" target="_blank"><img src="site/1210/ibCom_Vertical_Light_17.png" alt="" /></a></div>
+<div id="logon"></div>
+<div id="nav" style="padding-left: 12px;">
+<ul>
+<li value="0"><a href="index.html">home</a></li>
+<li value="0"><a href="gettingstarted_signup.html">sign up</a></li>
+<li value="0"><a href="https://console.mydigitalstructure.com">log on</a></li>
+<li value="0"><a href="gettingstarted.html">getting started</a></li>
+<li value="0"><a href="documentation.html">documentation</a></li>
+<li value="0"><a href="endpoints.html">endpoints</a></li>
+<li value="0"><a href="examples.html">examples</a></li>
+<li value="0"><a href="developwith.html">blog</a></li>
+<li value="0"><a class="last" href="contact.html">contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main"><table style="width: 100%;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td>
+<p><span style="font-size: 18pt; color: #888888;"><strong>COMMUNITY</strong></span></p>
+<p><span style="font-size: 24pt;"><strong>1BLANKSPACE.COM PATTERNS</strong></span></p>
+<p>1blankspace.com is an example open source <em>all of business</em>&nbsp;user interface. &nbsp; It demonstrates how to use the mydigitalstructure.com platform via a hosted <em>on-platform</em> webapp.</p>
+<p>It is written in <a href="gettingstarted_js.html">Javascript</a> and uses jQuery. &nbsp;It uses a functional program methodology to create the user interface in the <em>view-controller</em> layer and the object methodology to interact with the mydigitalstrcuture.com hosted <em>model</em>.</p>
+<p><strong>It is not optimised code and could be refactored in many ways</strong>. &nbsp; It's purpose is to show how to interact with the mydigitalstructure.com webapi - not how to write JavaScript/jQuery code.</p>
+<p>You can view it and get the source code at <a target="_blank" href="http://1blankspace.com">1blankspace.com</a>&nbsp;or at the <a target="_blank" href="https://github.com/ibcom">ibCom github repository</a>.</p>
+<p><span style="color: #000000;">If you have any questions, problems or ideas then please share them at<a target="_blank" href="http://community.mydigitalstructure.com"> community.mydigitalstructure.com</a>. &nbsp;Direct coding issues can be raised on the github repository or create a pull request.</span></p>
+<p><span style="color: #000000;">This page explains the design and build patterns used in this UI example. &nbsp;It uses a single XHTML <em>div</em> element to build the user interface elements.<br /></span></p>
+<p><span style="color: #000000;">Conceptually it is based on a <em>one object at a time</em> user experience - i.e. a json object is retrieved from the model, which is then managed by the user and returned if the state is changed.</span></p>
+<p><span style="color: #000000;">It's also worth reading the <a target="_blank" href="site/1210/ibCom_mydigitalstructure_Human_Engagement_1.4.pdf">ibCom Human Engagement Framework Overview</a>&nbsp;and also the <a target="_blank" href="site/1211/ibCom_1blankspace_jQuery_1.4.pdf">1blankspace jQuery Overview</a>.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #000000;"><br />KEY FILE RELATIONSHIPS</span></strong></span></p>
+<p><span style="color: #000000;"><img title="1blankspace_js_files" src="site/1210/1blankspace_js_files.png" alt="1blankspace_js_files" width="600" height="260" /><br /></span></p>
+<p><span style="font-size: 18pt;"><strong><span style="color: #000000;"><br />CONTROLLER PATTERN</span></strong></span></p>
+<p>The master controller has a number of key sections it relies on.</p>
+<p><a target="_blank" href="https://github.com/ibcom/1blankspace/blob/master/1blankspace.master-1.0.0.js">1blankspace.master-[version].js</a>&nbsp;<span style="color: #888888; font-size: 8pt;">[github]</span> contains this logic. &nbsp;You'll find the logical starting point in this file by searching for "<span style="font-family: 'courier new', courier; font-size: 10pt;">function&nbsp;</span><span><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterViewport(</span>".</span></p>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="8">
+<tbody>
+<tr style="background-color: #f5f5f5;">
+<td style="width: 150px;"><span style="font-size: 14pt; color: #000000;"><strong><br />GLOBALS</strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 150px;">Global view controller variables</td>
+<td>Holds the variables used through out the app to manage object context and alike.</td>
+</tr>
+<tr>
+<td>Default jQuery <span style="font-family: 'courier new', courier; font-size: 10pt;">.ajax()</span> options</td>
+<td>Sets up the standard options for the requests to the mydigitalstructure webapi (<em>model)</em>.</td>
+</tr>
+<tr>
+<td>Sets the global flag for setting focus</td>
+<td>Stops the setting of the focus into the search textbox when on a touch device.</td>
+</tr>
+<tr>
+<td>Extend jQuery to add functions</td>
+<td><span>Get # parameters from URL - good for deep url, viewpost and object/objectcontext item setting.</span><br /></td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">NAVIGATION</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterObjectViewportHistory()</span></td>
+<td>Log the last subview of each object in context of the items viewed.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterViewportDestination()</span></td>
+<td>Log or move to a new destination within the application.
+<p>Parameter "<em>instruction:</em>"</p>
+<ul>
+<li>1 = New destination</li>
+<li>2 = Go forward</li>
+<li>3 = Go back</li>
+<li>4 = Reset all destinations</li>
+<li>5 = Jump forward to most recent destination</li>
+<li>6 = Go to first destination - ie where started</li>
+<li>8 = Get destinations from mydigitalstructure.com - ie when log back on</li>
+</ul>
+</td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="font-size: 14pt;"><strong><span style="color: #888888;"><br /><span style="color: #000000;">ACCESS</span></span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterLogonShow()</span><br /><span style="color: #888888; font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterLogon()</span></td>
+<td>Show the default <em>log on</em> view. Can be overriden in home.js</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterLogonChangePasswordShow()<br /><span style="color: #888888;">interfaceMasterLogonChangePassword()<br /></span><span style="color: #888888;">interfaceMasterLogonChangePasswordProcess()<br /></span><span style="color: #888888;">interfaceMasterLogonSendPasswordShow()<br /></span><span style="color: #888888;">interfaceMasterLogonSendPassword()<br /></span><span style="color: #888888;">interfaceMasterLogonSendPasswordProcess()</span></span></td>
+<td>Show the <em>change password</em> view.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterLogoff()</span><br /></td>
+<td>Call the log off method on the mydigitalstructure.com</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterViewportUserControlShow()</span><br /></td>
+<td>Show the user in context drop down menu - eg Log off</td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">LAYOUT</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier; color: #ff0000;">interfaceMasterViewport()</span><br /></td>
+<td>This is the "<em>main</em>" function. &nbsp;Sends method requst to CORE endpoint.<br />If returns error then shows log on view, else calls&nbsp;<em>interfaceMasterViewportShow()</em><br /></td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterViewportShow()</span><br /></td>
+<td>Set up master view controller layout - eg viewport selector.<br /></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterReset()</span></td>
+<td>Unbind all the behaviour from the master buttons.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterHomeShow()</span></td>
+<td>Show the home view.</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterHomeOptionsShow()</span></td>
+<td>When user clicks the down arrow next to the home button.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterViewportSetup()</span></td>
+<td>If the user is administrator and clicks the set up button then this view is shown.</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterViewportControlSetupShow()</span></td>
+<td>Set the master buttons.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterHelpShow()</span></td>
+<td>Show help. &nbsp;Bound to the help button.</td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">INTERACTION</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterStatus()</span></td>
+<td>Update the status message in the master header.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterElementEditStart()</span><br /><span style="font-family: 'courier new', courier; font-size: 10pt;">Stop(),&nbsp;Save()</span></td>
+<td>In list editing. &nbsp;Uses meta data held on the XHTML elements.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterOptionsSetPosition()</span></td>
+<td>Sets the position of an element, relative to another element.</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterOptionsPosition()</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterElementOptionsSearch()</span></td>
+<td>Sets the standard "options div" relative to another element.&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterElementOptionsSearchShow()</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterSave()</span></td>
+<td>Send a standard "_MANAGE" request to mydigitalstructure.com</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterFormatSave()</span></td>
+<td>Encode data for a save request.</td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">COMMON</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterAttachments()</span></td>
+<td>Show attachments for an object item.<br /></td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterActions() / Show()</span></td>
+<td><span>Show actions for an object item.</span><br /></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterAddressSearch() / Show()</span></td>
+<td>Do an input box related address search. &nbsp;Works of the class of the element.</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterContactSearch() / Show()</span></td>
+<td><span>Do an input box related contact search. &nbsp;Works of the class of the element.</span><br /></td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterContactEmailSearch() / Show()</span></td>
+<td><span>Do an input box related email search. &nbsp;Works of the class of the element.</span><br /></td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">PAGINATION</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterPagination()</span><br /><span style="font-size: 10pt; font-family: 'courier new', courier;">/ Bind() / ShowMore() / ShowPage()</span></td>
+<td>Simple drop down list pagination.</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterPaginationList()</span><br /><span style="font-family: 'courier new', courier; font-size: 10pt;">/ ShowMore() / ShowPage()</span></td>
+<td>On page list pagination.</td>
+</tr>
+<tr style="background-color: #f5f5f5;">
+<td><span style="color: #888888; font-size: 14pt;"><strong><br /><span style="color: #000000;">OTHER</span></strong></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interfaceMasterConfirm()</span></td>
+<td>Show a standard Yes/No box.</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterFormatXHTML()</span></td>
+<td>Decode XHTML data.</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterViewportOptionsShow()</span></p>
+<p><span style="color: #888888; font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterViewportOptionsHide()</span></p>
+</td>
+<td>Show the options div.</td>
+</tr>
+</tbody>
+</table>
+<p><strong style="font-size: 14pt;"><span style="color: #000000;"><br /><span style="font-size: 18pt;">VIEW PATTERN</span></span></strong></p>
+<p><span style="font-family: 'courier new', courier;">[object]</span> is the viewport object eg ContactPerson, Project, Invoice.</p>
+<p>The logic is contained in a file for each object eg <a href="https://github.com/ibcom">1blankspace.<span>[object]-[version].js</span></a>&nbsp;<span style="color: #888888; font-size: 8pt;">[github]</span></p>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="8">
+<tbody>
+<tr>
+<td style="width: 300px; background-color: #f5f5f5;"><strong><br /><span style="font-size: 14pt;">FUNCTION</span></strong></td>
+<td style="background-color: #f5f5f5;"><strong><br /><span style="font-size: 14pt;">NOTES</span></strong></td>
+</tr>
+<tr>
+<td style="width: 125px;"><span style="font-family: 'courier new', courier; font-size: 10pt;">interface<span style="color: #888888;">[object]</span>MasterViewport()</span></td>
+<td><span>This is the "<em>main</em>" function for the view - this is what the master view calls to set up the viewport.</span>
+<p><span>It sets the global object contexts.</span></p>
+<p><span><span>It then binds behaviour to the master view elements - eg New, Save</span></span></p>
+</td>
+</tr>
+<tr>
+<td><em><span style="font-size: 10pt; font-family: 'courier new', courier;">interfaceMasterViewportDestination()</span></em></td>
+<td><span>Logs this view in the destination log so the user can get back to it. It also stores it on mydigitalstructure.com for when the user logs back on or moves between devices.<br /></span><br /></td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interface<span style="color: #888888;">[object]</span>HomeShow()</span></td>
+<td><span>Shows the default set of information when the viewport is displayed - as default it shows the last 10 object items edited.</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>Search()</span></td>
+<td><span>This is the main controller "get" function for interacting with the mydigitalstructure.com webapi/model.</span>
+<p><span>Servicing the text search, browser search &amp; retrieving a specific object item.</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>SearchShow()</span></td>
+<td><span>When text searching or browsing, this function services the displaying of the returned search results.</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>Viewport()</span></td>
+<td><span>This sets up the view for interacting with object item. &nbsp;</span><span>eg side menus.</span>
+<p><span>Each subview within the viewport has it's own dynamically created div.</span></p>
+<p><span>It binds each menu item to show the sub-view div and create the view within it.</span><br /><br /></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>Show()</span><br /></td>
+<td><span>This shows the actual object item selected from the search.</span>
+<p>It adds an in context destination history and shows the default summary sub-view.</p>
+<p><span>You can set up the summary page to show the most common object information. &nbsp;This could also be tweeked based on the user use case etc.</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-family: 'courier new', courier; font-size: 10pt;">interface<span style="color: #888888;">[object]</span>Details()</span></td>
+<td><span><span>Shows the sub-view to edit the base object item details.&nbsp;</span></span></td>
+</tr>
+<tr>
+<td>Other sub-views &amp; linked data views</td>
+<td>Different views that show the div created above in&nbsp;<span>interface</span><span style="color: #888888;">[object]</span><span>Viewport() and create the view.</span>
+<p><span>Typical includes an async ajax call to send request for data and then display in the view on response.</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>Save()</span></td>
+<td><span><span>Saves the data for the sub-view divs that have been shown.</span></span></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>New()</span></td>
+<td><span><span><span>Resets the view object item, ready to create new object item.</span></span></span></td>
+</tr>
+<tr>
+<td><span style="font-size: 10pt; font-family: 'courier new', courier;">interface<span style="color: #888888;">[object]</span>Remove()</span></td>
+<td><span><span><span>Deletes the object item.</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+<td style="width: 25px;" valign="top">&nbsp;</td>
+<td style="width: 200px;" valign="top">
+<p><img style="float: right;" title="1blankspace" src="site/1283/1blankspace.001.png" alt="1blankspace" width="220" height="44" /><br /><br /><br /><br /></p>
+<table style="width: 100%; background-color: #f5f5f5;" border="0" cellspacing="0" cellpadding="6">
+<tbody>
+<tr>
+<td style="text-align: right;"><a target="_blank" href="https://github.com/ibcom">Github repository</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="gettingstarted_js.html">Getting started Javascript</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="gettingstarted_git.html">Getting started Git &amp; Github</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="community_comments.html">Developer comments</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="community_stories.html">Developer stories</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a target="_blank" href="http://twitter.com/mydsondemand">twitter.com/mydsondemand</a></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a target="_blank" href="http://facebook.com/mydigitalstructure">facebook.com/mydigitalstructure</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: right;"><a target="_blank" href="http://www.youtube.com/watch?v=ksEVV6VN9N0"><strong><br />Building your first app<br />video by Rob</strong></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="width: 100%; text-align: right; padding-right: 15px; padding-top: 20px;"><a target="_blank" href="http://community.ibcom.biz"><img src="site/1210/ibCom_help.png" alt="Help!" /></a>&nbsp; <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</div>
+</div>
+<div id="footer"></div>
+</div></td myds='MainTable1.Main'></tr>
+</table>
+
+</td></tr>
+</table myds='MainTable1'>
+</td myds='LayoutTable1.MainTable1' >
+<td myds='LayoutTable1.RightBorder' height='100%' width=''  Class='border2 borderRight' >
+
+&nbsp;
+
+</td myds='LayoutTable1.MainTable1/LayoutTable1.RightBorder'>
+</tr>
+</table myds='LayoutTable1'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27776845-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
